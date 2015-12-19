@@ -1,0 +1,66 @@
+.naglowek-strony {
+    background-color: black;
+    height: 175px;
+}
+
+.logo {
+    padding-left: 130px;
+    padding-top: 5px;
+    float: left;
+}
+
+.naglowek-strony h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /*margin-top: 0px; po resecie css nie trzeba tego atrybutu wstawiac*/
+    padding-top: 70px;
+    padding-left: 580px;
+
+}
+
+/*"li, li a" - moglbym tak napisac = dla wszystkich elemntow li i a w li, ponieważ kilka poniższych styli jest dla li, kilka dla a*/
+li {
+    border: none;
+    /*list-style: none; niepotrzebny po resecie css*/
+    background-color: black;
+    width: 450px;
+    display: inline;
+    text-transform: uppercase;
+    padding: 13px;
+    /*padding rozciaga menu*/
+    font-weight: bold;
+    font-size: 21px;
+    color: white;
+    text-align: center;
+}
+
+
+li a {
+    border: none;
+    color: white;
+    /*list-style: none; niepotrzebny po resecie css*/
+    /*background-color: blue;*/
+    /*width: 150px;*/
+    /*display: inline;*/
+    /*padding: 13px;*/
+    /*padding rozciaga menu*/
+    /*font-size: 18px;*/
+    /*text-align: center;*/
+}
+
+li a:hover {
+    color: gold;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    position: absolute;
+    right: 0px;
+    top: 140px;
+}
+
