@@ -1,9 +1,21 @@
-.naglowek-strony {
-    background-color: black;
-    height: 175px;
+a {
+    text-decoration: none;
 }
 
-.logo {
+.clear {
+    clear: both;
+}
+
+
+.naglowek-strony {
+    background-color: black;
+    /*height: 175px;*/
+    /*min-width: 1300px;*/
+    position: relative;
+    overflow: hidden;
+}
+
+.naglowek-strony .logo {
     padding-left: 130px;
     padding-top: 5px;
     float: left;
@@ -16,12 +28,12 @@
     text-transform: uppercase;
     /*margin-top: 0px; po resecie css nie trzeba tego atrybutu wstawiac*/
     padding-top: 70px;
-    padding-left: 580px;
 
+    float: left;
 }
 
 /*"li, li a" - moglbym tak napisac = dla wszystkich elemntow li i a w li, ponieważ kilka poniższych styli jest dla li, kilka dla a*/
-li {
+.naglowek-strony li {
     border: none;
     /*list-style: none; niepotrzebny po resecie css*/
     background-color: black;
@@ -37,7 +49,7 @@ li {
 }
 
 
-li a {
+.naglowek-strony li a {
     border: none;
     color: white;
     /*list-style: none; niepotrzebny po resecie css*/
@@ -50,17 +62,13 @@ li a {
     /*text-align: center;*/
 }
 
-li a:hover {
+.naglowek-strony li a:hover {
     color: gold;
 }
 
-a {
-    text-decoration: none;
-}
-
-ul {
+.naglowek-strony nav {
     position: absolute;
     right: 0px;
-    top: 140px;
+    top: 150px;
 }
 
