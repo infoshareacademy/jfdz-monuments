@@ -28,7 +28,7 @@ a {
     text-transform: uppercase;
     /*margin-top: 0px; po resecie css nie trzeba tego atrybutu wstawiac*/
     padding-top: 70px;
-
+    padding-left: 80px;
     float: left;
 }
 
@@ -69,6 +69,6 @@ a {
 .naglowek-strony nav {
     position: absolute;
     right: 0px;
-    top: 150px;
+    top: 140px;
 }
 
