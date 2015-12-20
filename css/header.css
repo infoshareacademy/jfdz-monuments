@@ -13,6 +13,7 @@ a {
     /*min-width: 1300px;*/
     position: relative;
     overflow: hidden;
+    /*overlow chowa wystajace elementy*/
 }
 
 .naglowek-strony .logo {
