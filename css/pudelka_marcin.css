@@ -16,7 +16,21 @@
     margin: 0;
     border:0;
     float: left;
+    position: relative;
+    overflow: hidden;
+
+
+    filter: dhaskjdh;
+    -webkit-filter : hsfhsdkf;
+    -webkit-fil
+
 }
+
+.pudelko:hover {
+
+}
+
+
 
 .pudelko:nth-child(2n) {
     background-color: rgba(0,255,0,0.1);
@@ -28,3 +42,20 @@
     border: dashed;
     margin: auto;
 }
+
+.teskt_opisu {
+    background-color: #ff5555;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -100px;
+    height: 150px;
+    transition: bottom 1s;
+
+}
+
+.pudelko:hover .teskt_opisu {
+    bottom: 100px;
+}
+
