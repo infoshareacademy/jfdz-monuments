@@ -7,17 +7,31 @@ a {
 }
 
 
+
 .naglowek-strony {
     background-color: black;
+
+    /*background-image: url('../image/panorama%20ladniejsza%20naglowek.jpg');*/
     /*height: 175px;*/
     /*min-width: 1300px;*/
+    /*-webkit-filter: brightness(200%);*/
     position: relative;
     /*overflow: hidden;*/
     margin-left: auto;
     margin-right: auto;
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
+    background-position: 0 -375px;
+
+
     /*overlow chowa wystajace elementy*/
 }
 
+.naglowek-strony .tlo {
+    /*position: absolute;*/
+    float: ;
+
+}
 .naglowek-strony .logo {
     padding-left: 130px;
     padding-top: 5px;
