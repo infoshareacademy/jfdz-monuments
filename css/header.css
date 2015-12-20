@@ -12,7 +12,9 @@ a {
     /*height: 175px;*/
     /*min-width: 1300px;*/
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    margin-left: auto;
+    margin-right: auto;
     /*overlow chowa wystajace elementy*/
 }
 
@@ -70,6 +72,6 @@ a {
 .naglowek-strony nav {
     position: absolute;
     right: 0px;
-    top: 140px;
+    top: 135px;
 }
 
