@@ -3,7 +3,7 @@
 footer {
     /*display: block;*/
 
-    height: 40px;
+    height: 50px;
     background-color: darkgray;
     font-size: small;
     color: #eee;
@@ -25,5 +25,15 @@ span {
     padding: 5px;
     margin: 5px;
     display: inline-block;
+}
+.media  {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    border:0;
+    float: left;
+    position: relative;
+    overflow: hidden;
 }
 
