@@ -18,8 +18,8 @@ a {
     margin-right: auto;
     /*!*ponizej parametry ktore moga sie przydac przy wstawianiu w tło obrazka:*/
     /*background-size: contain;*/
-    background-repeat: no-repeat;
-    background-position: 239px -268px;
+    /*background-repeat: no-repeat;*/
+    /*background-position: 239px -268px;*/
     /*overlow chowa wystajace elementy*!*/
 }
 
@@ -38,11 +38,11 @@ a {
 .naglowek-strony h1 {
     color: white;
     font-family: 'Alfa Slab One', serif;
-    font-size: 43px;
+    font-size: 40px;
     /*font-weight: bold;*/
     text-transform: uppercase;
     /*margin-top: 0px; po resecie css nie trzeba tego atrybutu wstawiac*/
-    padding-top: 70px;
+    padding-top: 50px;
     padding-left: 125px;
     float: left;
 }
@@ -84,6 +84,6 @@ a {
 .naglowek-strony nav {
     position: absolute;
     right: 0px;
-    top: 135px;
+    top: 97px;
 }
 
