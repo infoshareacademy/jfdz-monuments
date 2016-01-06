@@ -4,9 +4,9 @@ footer {
     /*display: block;*/
 
     height: 50px;
-    background-color: darkgray;
-    font-size: small;
-    color: #eee;
+    background-color: black;
+    font-size: 16px;
+    color: white;
     /*margin: 5px;*/
     margin: auto;
     /*padding: 3px;*/
@@ -20,7 +20,7 @@ footer {
 }
 
 span {
-    background-color: #463c41;
+    background-color: red;
     /*border: solid 1px #222;*/
     padding: 5px;
     margin: 5px;

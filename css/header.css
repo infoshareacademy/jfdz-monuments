@@ -6,12 +6,9 @@ a {
     clear: both;
 }
 
-
-
 .naglowek-strony {
-    background-color: black;
-
-    /*background-image: url('../image/panorama%20ladniejsza%20naglowek.jpg');*/
+    background-color: black ;
+    /*background-image: url('../image/dct1.jpg');*/
     /*height: 175px;*/
     /*min-width: 1300px;*/
     /*-webkit-filter: brightness(200%);*/
@@ -19,22 +16,22 @@ a {
     /*overflow: hidden;*/
     margin-left: auto;
     margin-right: auto;
+    /*!*ponizej parametry ktore moga sie przydac przy wstawianiu w tło obrazka:*/
     /*background-size: contain;*/
     background-repeat: no-repeat;
-    background-position: 0 -375px;
-
-
-    /*overlow chowa wystajace elementy*/
+    background-position: 239px -268px;
+    /*overlow chowa wystajace elementy*!*/
 }
 
 .naglowek-strony .tlo {
     /*position: absolute;*/
-    float: ;
+
 
 }
+
 .naglowek-strony .logo {
-    padding-left: 130px;
-    padding-top: 5px;
+    padding-left: 117px;
+    padding-top: 0px;
     float: left;
 }
 
@@ -45,7 +42,7 @@ a {
     text-transform: uppercase;
     /*margin-top: 0px; po resecie css nie trzeba tego atrybutu wstawiac*/
     padding-top: 70px;
-    padding-left: 80px;
+    padding-left: 162px;
     float: left;
 }
 
@@ -57,14 +54,13 @@ a {
     width: 450px;
     display: inline;
     text-transform: uppercase;
-    padding: 13px;
+    padding: 7px;
     /*padding rozciaga menu*/
     font-weight: bold;
     font-size: 21px;
     color: white;
     text-align: center;
 }
-
 
 .naglowek-strony li a {
     border: none;
@@ -80,7 +76,7 @@ a {
 }
 
 .naglowek-strony li a:hover {
-    color: gold;
+    color: #71553A;
 }
 
 .naglowek-strony nav {
