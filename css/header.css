@@ -37,12 +37,13 @@ a {
 
 .naglowek-strony h1 {
     color: white;
-    font-size: 40px;
-    font-weight: bold;
+    font-family: 'Alfa Slab One', serif;
+    font-size: 43px;
+    /*font-weight: bold;*/
     text-transform: uppercase;
     /*margin-top: 0px; po resecie css nie trzeba tego atrybutu wstawiac*/
     padding-top: 70px;
-    padding-left: 162px;
+    padding-left: 125px;
     float: left;
 }
 
@@ -56,8 +57,9 @@ a {
     text-transform: uppercase;
     padding: 7px;
     /*padding rozciaga menu*/
-    font-weight: bold;
-    font-size: 21px;
+    font-family: 'Alfa Slab One', serif;
+    /*font-weight: bold;*/
+    font-size: 19px;
     color: white;
     text-align: center;
 }
