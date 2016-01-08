@@ -8,21 +8,24 @@
 
 .f1 {
     display: inline-block;
-    width: 400px;
+    width: 395px;
+    /*czemu jak dam 400 px to tekst ostatni sie przesunie*/
+    text-align: center;
+    /*border: solid 1px;*/
 }
 
-.f2 {
-    display: inline-block;
-    /*padding: 55px;*/
-    width: 400px;
-}
-.f3 {
-    display: inline-block;
-    width: 400px;
-    margin-right: -8px;
-    /*podpytac na zajeciac o tą kolumnę*/
+.f1 h1 {
+    font-family: "Alfa Slab One",serif;
+    color: black;
+    font-size: 15px;
 }
 
-.f_opis {
-    display: inline-block;
+.f1 .tresc {
+    /*display: inline-block;*/
+    /*text-align: center;*/
+    /*font-family: "Alfa Slab One", serif;*/
+    font-size: 14px;
+    color: black;
+    font-family: "Times New Roman"sans-serif;
+    /*font-style: italic;*/
 }
