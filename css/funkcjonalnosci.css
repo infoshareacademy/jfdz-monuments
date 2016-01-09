@@ -16,9 +16,12 @@
 }
 
 .f1 h1 {
-    font-family: "Alfa Slab One",serif;
-    color: white;
-    font-size: 15px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    vertical-align: 0.8em;
+    color: #a27854;
+    letter-spacing: 1px;
+    font-size: 20px;
 }
 
 .f1 .tresc {
