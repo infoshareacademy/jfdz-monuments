@@ -1,5 +1,6 @@
 .funkcjonalnosci {
-    background-color: #FEFEFE;
+    /*background-color: #FEFEFE;*/
+    /*background-image: url('../image/back_2.jpg');*/
     margin: auto;
     /*text-align: center;*/
     padding-top: 10px;
@@ -16,7 +17,7 @@
 
 .f1 h1 {
     font-family: "Alfa Slab One",serif;
-    color: black;
+    color: white;
     font-size: 15px;
 }
 
@@ -25,7 +26,7 @@
     /*text-align: center;*/
     /*font-family: "Alfa Slab One", serif;*/
     font-size: 14px;
-    color: black;
+    color: white;
     font-family: "Times New Roman"sans-serif;
     /*font-style: italic;*/
 }
