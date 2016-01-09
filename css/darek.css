@@ -13,10 +13,11 @@
     height: auto;
     /*marigin: auto;*/
 }
-.1 {
-    float: left;
 
 
-
-
+    .pudelka:hover {
+        filter: none;
+        -webkit-filter: grayscale(100%);
+        -webkit-transition: all 0.7s ease;
+        transition: all 0.7s ease;
 }
