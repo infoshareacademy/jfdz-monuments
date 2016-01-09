@@ -134,9 +134,15 @@
     position: relative;
     overflow: hidden;
 
-    filter: dhaskjdh;
-    -webkit-filter: hsfhsdkf;
-    -webkit-fil: hsfhsdkf;
+
+}
+
+
+.pudelko:hover {
+    filter: none;
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
 }
 
 .pudelko:nth-child(2n) {
