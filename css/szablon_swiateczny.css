@@ -1,0 +1,185 @@
+.content {
+    width: 1200px;
+    background-image: url("../images/back.jpg");
+    border: solid;
+    border-color: #a27854;
+    border-bottom: black;
+    border-width: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*style naglowka*/
+.naglowek-strony {
+    position: relative;
+    height: 150px;
+}
+
+.naglowek-strony .tytul {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 900;
+    color: #a27854;
+    letter-spacing: 3px;
+    font-size: 50px;
+    left: 260px;
+    bottom: 55px;
+    position: absolute;
+}
+
+.naglowek-strony .logo {
+    background-image: url("../images/logo_loza.svg");
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left: 20px;
+    padding: 0px;
+    position: absolute;
+}
+
+.naglowek-strony .menu {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    color: RGBa(255, 255, 255, 0.8);
+    padding: 10px;
+    position: absolute;
+    bottom: 55px;
+    right: 50px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.naglowek-strony .menu li {
+    display: inline;
+}
+
+/*opis celu*/
+.content_2 {
+    width: 1200px;
+    background-image: url("../images/back_2.jpg");
+    border: solid;
+    border-color: #a27854;
+    border-top: #a27854;
+    border-width: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cel {
+height: 700px;
+}
+
+.cel .opis_celu {
+    text-align: center;
+    top: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.opis_celu {
+    font-family: 'Marcellus SC', serif;
+    letter-spacing: 1px;
+    color: #d9dde7;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.cudzy_1 {
+    font-family: 'Roboto Slab', serif;
+    vertical-align: 0.1em;
+    font-weight: 700;
+    color: #a27854;
+    font-size: 27px;
+}
+
+.cudzy_2 {
+    font-family: 'Roboto Slab', serif;
+    vertical-align: 0.62em;
+    font-weight: 700;
+    color: #a27854;
+    font-size: 24px;
+}
+
+/*zdjecia*/
+
+.pudelko_glowne {
+    /*width: 1200px;*/
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pudelko {
+    top: 50px;
+    width: 400px;
+    height: 250px;
+    background-color: rgba(255, 0, 0, 0.1);
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    float: left;
+    position: relative;
+    overflow: hidden;
+
+    filter: dhaskjdh;
+    -webkit-filter: hsfhsdkf;
+    -webkit-fil: hsfhsdkf;
+}
+
+.pudelko:nth-child(2n) {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+.teskt_opisu {
+    background-color: #454b4f;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color: RGBa(255, 255, 255, 1);
+    position: absolute;
+    padding: 10px;
+    left: 0px;
+    right: 0px;
+    bottom: -130px;
+    height: 150px;
+    transition: bottom 1s;
+
+}
+
+.pudelko:hover .teskt_opisu {
+    bottom: -20px;
+}
+
+.naglowek {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    vertical-align: 0.8em;
+    color: #a27854;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+/*stopka*/
+
+.stopka-strony {
+    height: 50px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+    color: #a27854;
+    letter-spacing: 3px;
+    font-size: 10px;
+}
