@@ -47,3 +47,19 @@ footer {
     overflow: hidden;
 }
 
+input[type="text"] {
+
+    border: solid 5px;
+    background-color: white;
+    padding: 20px;
+}
+
+input[type="submit"] {
+
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    padding: 20px;
+
+}
+
