@@ -7,7 +7,7 @@ footer {
     height: 50px;
     background-color: black;
     font-family: 'Exo 2', sans-serif;
-    font-weight: 100;
+    font-weight: 150;
     color: #a27854;
     letter-spacing: 3px;
     font-size: 20px;
@@ -40,11 +40,18 @@ footer {
     width: 50px;
     height: 50px;
     padding: 0;
-    margin: 0;
     border:0;
-    float: left;
-    position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 550px;
+    /*position: absolute;*/
+
+}
+
+img {
+    display: inline-block;
+
 }
 
 input[type="text"] {
