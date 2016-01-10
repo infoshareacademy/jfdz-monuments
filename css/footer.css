@@ -2,12 +2,17 @@
 
 footer {
     /*display: block;*/
-    font-family: 'Alfa Slab One', serif;
+    /*font-family: 'Alfa Slab One', serif;*/
 
     height: 150px;
     background-color: black;
-    font-size: 16px;
-    color: white;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+    color: #a27854;
+    letter-spacing: 3px;
+    font-size: 20px;
+    /*font-size: 16px;*/
+    /*color: white;*/
     /*margin: 5px;*/
     margin: auto;
     /*padding: 3px;*/
