@@ -48,8 +48,6 @@
     right: 50px;
 }
 
-/*.naglowek-strony li a:hover {*/
-/*color: #71553A;*/
 
 .left {
     float: left;
@@ -67,7 +65,7 @@
     display: inline;
     padding: 10px;
     font-weight: 200;
-    /*color:white;*/
+    font-family: 'Exo 2', sans-serif;
 
 }
 .naglowek-strony .menu li a   {
