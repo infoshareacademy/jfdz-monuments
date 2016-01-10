@@ -14,8 +14,12 @@ footer {
     /*font-size: 16px;*/
     /*color: white;*/
     /*margin: 5px;*/
+    background-image: url("../images/back.jpg");
+    height: 350px;
+    width: 1200px;
+    font-size: 16px;
     margin: auto;
-    /*padding: 3px;*/
+
 
     text-align: center;
 
