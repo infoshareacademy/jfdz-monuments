@@ -44,9 +44,12 @@
     color: RGBa(255, 255, 255, 0.8);
     padding: 10px;
     position: absolute;
-    bottom: 55px;
+    bottom: 53px;
     right: 50px;
 }
+
+/*.naglowek-strony li a:hover {*/
+/*color: #71553A;*/
 
 .left {
     float: left;
@@ -60,8 +63,21 @@
     clear: both;
 }
 
-.naglowek-strony .menu li {
+.naglowek-strony .menu li{
     display: inline;
+    padding: 10px;
+    font-weight: 200;
+    /*color:white;*/
+
+}
+.naglowek-strony .menu li a   {
+    text-decoration: none;
+    color: white;
+}
+
+.naglowek-strony .menu li a:hover {
+    color: #a27854;
+
 }
 
 /*opis celu*/
