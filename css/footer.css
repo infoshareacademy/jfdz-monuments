@@ -2,7 +2,18 @@
 
 footer {
     /*display: block;*/
+    /*font-family: 'Alfa Slab One', serif;*/
 
+    height: 50px;
+    background-color: black;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+    color: #a27854;
+    letter-spacing: 3px;
+    font-size: 20px;
+    /*font-size: 16px;*/
+    /*color: white;*/
+    /*margin: 5px;*/
     background-image: url("../images/back.jpg");
     height: 350px;
     width: 1200px;

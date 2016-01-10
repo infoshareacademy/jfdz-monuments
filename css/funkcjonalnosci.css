@@ -3,7 +3,7 @@
     /*background-image: url('../image/back_2.jpg');*/
     margin: auto;
     /*text-align: center;*/
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 10px;
 }
 
@@ -22,6 +22,7 @@
     color: #a27854;
     letter-spacing: 1px;
     font-size: 20px;
+    padding-top: 10px;
 }
 
 .f1 .tresc {
@@ -30,6 +31,7 @@
     /*font-family: "Alfa Slab One", serif;*/
     font-size: 14px;
     color: white;
-    font-family: "Times New Roman"sans-serif;
+    font-family: 'Exo 2', sans-serif;
+    padding-top: 10px;
     /*font-style: italic;*/
 }

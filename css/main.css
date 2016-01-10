@@ -44,9 +44,10 @@
     color: RGBa(255, 255, 255, 0.8);
     padding: 10px;
     position: absolute;
-    bottom: 55px;
+    bottom: 53px;
     right: 50px;
 }
+
 
 .left {
     float: left;
@@ -60,8 +61,21 @@
     clear: both;
 }
 
-.naglowek-strony .menu li {
+.naglowek-strony .menu li{
     display: inline;
+    padding: 10px;
+    font-weight: 200;
+    font-family: 'Exo 2', sans-serif;
+
+}
+.naglowek-strony .menu li a   {
+    text-decoration: none;
+    color: white;
+}
+
+.naglowek-strony .menu li a:hover {
+    color: #a27854;
+
 }
 
 /*opis celu*/
@@ -153,7 +167,7 @@
     background-color: #454b4f;
     background-color: rgba(0, 0, 0, 0.7);
     font-family: 'Exo 2', sans-serif;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 15px;
     color: RGBa(255, 255, 255, 1);
     position: absolute;
