@@ -152,11 +152,14 @@
 }
 
 
-.pudelko:hover {
+.pudelko:hover img {
     filter: none;
     -webkit-filter: grayscale(100%);
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
+}
+/*.pudelko:hover .teskt_opisu{*/
+    /*-webkit-filter: grayscale(0%);*/
 }
 
 .pudelko:nth-child(2n) {
