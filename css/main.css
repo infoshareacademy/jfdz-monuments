@@ -83,7 +83,8 @@
     width: 1200px; height: 200px;
     background-image: url("../images/panorama.jpg");
     font-size: 20px;
-    color:white;
+
+    color:black;
     text-align: center;
 
 
@@ -91,6 +92,7 @@
 }
 .zajawka-tekst{
     font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
     padding: 40px;
     margin-left: auto;
     margin-right: auto;
