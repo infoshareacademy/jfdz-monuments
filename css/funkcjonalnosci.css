@@ -15,6 +15,11 @@
     /*border: solid 1px;*/
 }
 
+.f1 img:hover {
+ zoom: 125%
+
+}
+
 .f1 h1 {
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
