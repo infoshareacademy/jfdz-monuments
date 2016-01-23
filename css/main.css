@@ -78,7 +78,25 @@
 
 }
 
-/*opis celu*/
+/*opis zajawki*/
+.zajawka {
+    width: 1200px; height: 200px;
+    background-image: url("../images/panorama.jpg");
+    font-size: 20px;
+    color:white;
+    text-align: center;
+
+
+
+}
+.zajawka-tekst{
+    font-family: 'Exo 2', sans-serif;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+    /*opis celu*/
+
 .content_2 {
     width: 1200px;
     background-image: url("../images/back_2.jpg");
@@ -160,7 +178,7 @@
 }
 /*.pudelko:hover .teskt_opisu{*/
     /*-webkit-filter: grayscale(0%);*/
-}
+
 
 .pudelko:nth-child(2n) {
     background-color: rgba(0, 255, 0, 0.1);
