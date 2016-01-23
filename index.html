@@ -35,34 +35,7 @@
 
 </header>
 
-<!--<div class="funkcjonalnosci szerokosc">-->
-<!--<div class="f1">-->
-<!--<img src="image/loop1.png" width="50px" height="50px" alt="loop">-->
 
-<!--<h1>Intuicyjna wyszukiwarka</h1>-->
-
-<!--<div class="tresc">-->
-<!--Nie musisz szukać w podstronach, aby-->
-<!--odnaleźć miejsca,</br> które wzbudzą Twoje zainteresowanie .-->
-<!--</div>-->
-<!--</div>-->
-<!--<div class="f1"> <img src="image/book1.png" width="50px" height="50px" alt="book">-->
-<!--<h1>Minimum Teorii</h1>-->
-
-<!--<div class="tresc">-->
-<!--Opisy zabytków na naszej stronie pozwolą Tobie</br>-->
-<!--zaoszczędzić czas poświęcony na przewodnika.-->
-<!--</div>-->
-<!--</div>-->
-<!--<div class="f1"> <img src="image/anchor.png" width="50px" height="50px" alt="anchor">-->
-<!--<h1>Najciekawsze zabytki w jednym miejscu</h1>-->
-
-<!--<div class="tresc">-->
-<!--Dzięki naszej aplikacji zwiedzanie Gdańska</br> już nigdy nie będzie nudne.-->
-<!--</div>-->
-<!--</div>-->
-
-<!--</div>-->
 <main class="cel content_2">
     <div class="funkcjonalnosci szerokosc">
         <div class="f1">
@@ -171,12 +144,31 @@
         <br>Chcesz dowiedzieć się więcej? Wyślij do nas swój e-mail!
         <br>
         <br>
-        <input type="text" placeholder="Wpisz e-mail..." name="myField" id="formularz">
+        <input type="email" placeholder="Wpisz e-mail..." name="myField" id="formularz">
         <!-- kolejne pola -->
         <input type="hidden"  name="receiver" value="niechcemaila@gmail.com">
         <input type="submit"  value="Wyślij">
     </form>
+<!--proba z captcha-->
+    <div id="captcontainer">
+        <div class="row">
+            <img src="captcha.php" alt="CAPTCHA Image" class="captchaimg">
+        </div>
 
+        <div class="row">
+            <label for="captcha">CAPTCHA</label>
+            <input type="text" name="captcha" id="captcha" tabindex="5" class="formtext">
+            <!-- captcha font http://www.dafont.com/crimes-times-six.font -->
+        </div>
+    </div>
+
+    <div id="resultscontainer">
+        <input type="submit" name="submit" id="submit" value="Register!">
+        <span id="submitresults"></span>
+    </div>
+    </form>
+    </div>
+<!--koniec proby-->
 
 
 
@@ -189,8 +181,8 @@
     </span>
 
 
+    <br>
 
-        <div class="clear"></div>
         <span id="copyright">Copyright&copy 2015 TeamLoża</span>
 
 </footer>
