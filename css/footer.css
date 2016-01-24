@@ -1,19 +1,12 @@
 
 
 footer {
-    /*display: block;*/
-    /*font-family: 'Alfa Slab One', serif;*/
-
-    /*height: 50px;*/
     background-color: black;
     font-family: 'Exo 2', sans-serif;
     font-weight: 150;
     color: #a27854;
     letter-spacing: 3px;
     font-size: 20px;
-    /*font-size: 16px;*/
-    /*color: white;*/
-    /*margin: 5px;*/
     background-image: url("../images/back.jpg");
     height: 200px;
     width: 1200px;
@@ -35,7 +28,7 @@ footer {
 
 
 
-input[type="text"] {
+input[type="email"] {
     color: white;
     border: solid 1px;
     background-color: transparent;
@@ -55,6 +48,10 @@ input[type="submit"] {
     font-size: 15px;
     border: 0px;
 
+}
+
+input[type="email"]:invalid {
+    border: 2px solid red;
 }
 
 input[type="submit"]:hover {
