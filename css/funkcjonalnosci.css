@@ -1,7 +1,10 @@
 .funkcjonalnosci {
+    /*background-color: #FEFEFE;*/
+    /*background-image: url('../image/back_2.jpg');*/
     margin: auto;
+    /*text-align: center;*/
     padding-top: 0px;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
 
 .f1 {
@@ -9,6 +12,9 @@
     width: 395px;
     /*czemu jak dam 400 px to tekst ostatni sie przesunie*/
     text-align: center;
+    /*border: solid 1px;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
@@ -18,13 +24,13 @@
     transition: all 1s;
 }
 
-#zapas {
+.zapas {
     height: 60px;
 }
 
 .f1 img:hover {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     transition: width 1s, height 1s;
 
 

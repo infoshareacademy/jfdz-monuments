@@ -21,7 +21,7 @@
     color: #a27854;
     letter-spacing: 3px;
     font-size: 50px;
-    left: 260px;
+    left: 281px;
     bottom: 55px;
     position: absolute;
 }
@@ -43,10 +43,9 @@
     font-size: 22px;
     color: RGBa(255, 255, 255, 0.8);
     padding: 10px;
-    position:  absolute;
+    position: absolute;
     bottom: 53px;
     right: 50px;
-
 }
 
 
@@ -68,16 +67,10 @@
     font-weight: 200;
     font-family: 'Exo 2', sans-serif;
 
-
-
-
-
-
 }
 .naglowek-strony .menu li a   {
     text-decoration: none;
     color: white;
-
 }
 
 .naglowek-strony .menu li a:hover {
@@ -85,7 +78,29 @@
 
 }
 
-/*opis celu*/
+/*opis zajawki*/
+.zajawka {
+    width: 1200px; height: 200px;
+    background-image: url("../images/panorama.jpg");
+    font-size: 20px;
+
+    color:black;
+    text-align: center;
+
+
+
+}
+.zajawka-tekst{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size:27px;
+    letter-spacing: 1px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+    /*opis celu*/
+
 .content_2 {
     width: 1200px;
     background-image: url("../images/back_2.jpg");
@@ -98,7 +113,7 @@
 }
 
 .cel {
-    height: 700px;
+    /*height: 700px;*/
 }
 
 .cel .opis_celu {
@@ -143,7 +158,7 @@
 }
 
 .pudelko {
-    top: 50px;
+    /*top: 50px;*/
     width: 400px;
     height: 250px;
     background-color: rgba(255, 0, 0, 0.1);
@@ -165,8 +180,9 @@
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
 }
-
-
+/*.pudelko:hover .teskt_opisu{*/
+    /*-webkit-filter: grayscale(0%);*/
+}
 
 .pudelko:nth-child(2n) {
     background-color: rgba(0, 255, 0, 0.1);
