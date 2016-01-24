@@ -134,6 +134,12 @@
     margin-left: auto;
     margin-right: auto;
 }
+.pudelko_ikon {
+    /*width: 1200px;*/
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .pudelko {
     top: 50px;
@@ -160,7 +166,7 @@
 }
 /*.pudelko:hover .teskt_opisu{*/
     /*-webkit-filter: grayscale(0%);*/
-}
+/*}*/
 
 .pudelko:nth-child(2n) {
     background-color: rgba(0, 255, 0, 0.1);
@@ -195,7 +201,20 @@
     letter-spacing: 1px;
     font-size: 20px;
 }
-
+    /*ikony*/
+.ikony {
+    top: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, 0.1);
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: 10;
+    float: center;
+    position: relative;
+    overflow: hidden;
+}
 /*stopka*/
 
 .stopka-strony {
