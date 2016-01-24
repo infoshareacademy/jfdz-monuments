@@ -4,7 +4,7 @@
     margin: auto;
     /*text-align: center;*/
     padding-top: 0px;
-    padding-bottom: 10px;
+    /*padding-bottom: 10px;*/
 }
 
 .f1 {
@@ -13,6 +13,8 @@
     /*czemu jak dam 400 px to tekst ostatni sie przesunie*/
     text-align: center;
     /*border: solid 1px;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .f1 img {
@@ -21,7 +23,7 @@
     transition: all 1s;
 }
 
-#zapas {
+.zapas {
     height: 60px;
 }
 
