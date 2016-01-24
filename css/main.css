@@ -43,9 +43,10 @@
     font-size: 22px;
     color: RGBa(255, 255, 255, 0.8);
     padding: 10px;
-    position: absolute;
+    position:  absolute;
     bottom: 53px;
     right: 50px;
+
 }
 
 
@@ -67,10 +68,16 @@
     font-weight: 200;
     font-family: 'Exo 2', sans-serif;
 
+
+
+
+
+
 }
 .naglowek-strony .menu li a   {
     text-decoration: none;
     color: white;
+
 }
 
 .naglowek-strony .menu li a:hover {
@@ -158,9 +165,8 @@
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
 }
-/*.pudelko:hover .teskt_opisu{*/
-    /*-webkit-filter: grayscale(0%);*/
-}
+
+
 
 .pudelko:nth-child(2n) {
     background-color: rgba(0, 255, 0, 0.1);

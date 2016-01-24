@@ -1,8 +1,5 @@
 .funkcjonalnosci {
-    /*background-color: #FEFEFE;*/
-    /*background-image: url('../image/back_2.jpg');*/
     margin: auto;
-    /*text-align: center;*/
     padding-top: 0px;
     padding-bottom: 10px;
 }
@@ -12,7 +9,7 @@
     width: 395px;
     /*czemu jak dam 400 px to tekst ostatni sie przesunie*/
     text-align: center;
-    /*border: solid 1px;*/
+
 }
 
 .f1 img {
@@ -44,12 +41,9 @@
 }
 
 .f1 .tresc {
-    /*display: inline-block;*/
-    /*text-align: center;*/
-    /*font-family: "Alfa Slab One", serif;*/
-    font-size: 14px;
+        font-size: 14px;
     color: white;
     font-family: 'Exo 2', sans-serif;
     padding-top: 10px;
-    /*font-style: italic;*/
+
 }
