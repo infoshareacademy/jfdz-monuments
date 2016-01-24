@@ -7,36 +7,52 @@
     /*padding-bottom: 10px;*/
 }
 
-.f1 {
+.funkcjonalnosc {
     display: inline-block;
     width: 395px;
     /*czemu jak dam 400 px to tekst ostatni sie przesunie*/
     text-align: center;
     /*border: solid 1px;*/
-    padding-top: 20px;
+    padding-top: 85px;
     padding-bottom: 20px;
-
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center 30px;
+    transition: all 0.3s  linear;
+    /*height: 100px;*/
 }
 
-.f1 img {
-    width: 50px;
-    height: 50px;
-    transition: all 1s;
+.funkcjonalnosc:hover {
+    background-size: 60px 60px;
+    background-position: center 25px;
 }
 
-.zapas {
-    height: 60px;
-}
-
-.f1 img:hover {
-    width: 60px;
-    height: 60px;
-    transition: width 1s, height 1s;
+.funkcjonalnosc-1 {    background-image: url('../images/lupa.svg');}
+.funkcjonalnosc-2 {    background-image: url('../images/book.svg');}
+.funkcjonalnosc-3 {    background-image: url('../images/location.svg');}
 
 
-}
 
-.f1 h1 {
+    /* drugie podejście = gdy img są wklejone w htmla:
+    .f1 img {*/
+    /**/
+    /*padding: 30px;*/
+    /*width: 50px;*/
+    /*height: 50px;*/
+    /*transition: all 1s;*/
+/*}*/
+
+/*.f1 img:hover {*/
+    /*padding: 20px;*/
+    /*width: 60px;*/
+    /*height: 60px;*/
+    /*transition: width 1s, height 1s, padding 1s;*/
+/*}*
+trzecie podejście : ubranie img w osobnego diva.
+/
+
+.funkcjonalnosc h1 {
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
     vertical-align: 0.8em;
@@ -46,8 +62,8 @@
     padding-top: 10px;
 }
 
-.f1 .tresc {
-        font-size: 14px;
+.funkcjonalnosc .tresc {
+    font-size: 14px;
     color: white;
     font-family: 'Exo 2', sans-serif;
     padding-top: 10px;
