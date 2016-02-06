@@ -3,19 +3,18 @@
 footer {
     background-color: black;
     font-family: 'Exo 2', sans-serif;
-    font-weight: 150;
+    font-weight: 200;
     color: #a27854;
     letter-spacing: 3px;
     font-size: 20px;
     background-image: url("../images/back.jpg");
-    height: 200px;
+    height: 300px;
     width: 1200px;
-    font-size: 16px;
     margin: auto;
     text-align: center;
 
 }
-.media  {
+.social_media  {
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -42,8 +41,7 @@ input[type="submit"] {
     color: #a27854;
     padding: 7px;
     font-family: 'Exo 2', sans-serif;
-    font-weight: 150;
-    color: white;
+    font-weight: 200;
     letter-spacing: 3px;
     font-size: 15px;
     border: 0px;
