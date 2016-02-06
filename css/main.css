@@ -98,6 +98,7 @@
     padding: 40px;
     margin-left: auto;
     margin-right: auto;
+    display: none;
  }
     /*opis celu*/
 
@@ -228,3 +229,5 @@
     letter-spacing: 3px;
     font-size: 10px;
 }
+
+

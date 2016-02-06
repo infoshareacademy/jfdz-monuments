@@ -4,7 +4,7 @@
 
 
 function wplywanieElementow(){
-$('.zajawka-tekst').
+$('.zajawka-tekst').fadeIn(1000);
 
 };
 
