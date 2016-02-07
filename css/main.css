@@ -98,7 +98,6 @@
     padding: 40px;
     margin-left: auto;
     margin-right: auto;
-    display: none;
  }
     /*opis celu*/
 
@@ -239,7 +238,7 @@
 
 .pudelko_ikon .ikony img {
     width: 40px;
-    opacity: 0.8;
+    /*opacity: 1.0;*/
     transition-duration: 500ms;
     /*position: absolute;*/
 }
