@@ -1,20 +1,19 @@
-
-
 footer {
     background-color: black;
     font-family: 'Exo 2', sans-serif;
-    font-weight: 200;
-    color: #a27854;
+    font-weight: 150;
+    color: #a27854 ;
     letter-spacing: 3px;
     font-size: 20px;
     background-image: url("../images/back.jpg");
-    height: 300px;
+    height: 200px;
     width: 1200px;
+    font-size: 16px;
     margin: auto;
     text-align: center;
 
 }
-.social_media  {
+.media  {
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -38,10 +37,11 @@ input[type="email"] {
 input[type="submit"] {
 
     background-color: transparent;
-    color: #a27854;
+    color: #a27854 ;
     padding: 7px;
     font-family: 'Exo 2', sans-serif;
-    font-weight: 200;
+    font-weight: 150;
+    color: white;
     letter-spacing: 3px;
     font-size: 15px;
     border: 0px;
@@ -53,7 +53,7 @@ input[type="email"]:invalid {
 }
 
 input[type="submit"]:hover {
-    color: #a27854;
+    color: #a27854 ;
 
 }
 
