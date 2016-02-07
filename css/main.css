@@ -21,7 +21,7 @@
     color: #a27854;
     letter-spacing: 3px;
     font-size: 50px;
-    left: 281px;
+    left: 260px;
     bottom: 55px;
     position: absolute;
 }
@@ -32,7 +32,7 @@
     width: 100px;
     height: 100px;
     top: 20px;
-    left: 70px;
+    left: 20px;
     padding: 0px;
     position: absolute;
 }
@@ -48,7 +48,6 @@
     right: 50px;
 }
 
-
 .left {
     float: left;
 }
@@ -61,14 +60,15 @@
     clear: both;
 }
 
-.naglowek-strony .menu li{
+.naglowek-strony .menu li {
     display: inline;
     padding: 10px;
     font-weight: 200;
     font-family: 'Exo 2', sans-serif;
 
 }
-.naglowek-strony .menu li a   {
+
+.naglowek-strony .menu li a {
     text-decoration: none;
     color: white;
 }
@@ -78,29 +78,7 @@
 
 }
 
-/*opis zajawki*/
-.zajawka {
-    width: 1200px; height: 200px;
-    background-image: url("../images/panorama.jpg");
-    font-size: 20px;
-
-    color:black;
-    text-align: center;
-
-
-
-}
-.zajawka-tekst{
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 500;
-    font-size:27px;
-    letter-spacing: 1px;
-    padding: 40px;
-    margin-left: auto;
-    margin-right: auto;
- }
-    /*opis celu*/
-
+/*opis celu*/
 .content_2 {
     width: 1200px;
     background-image: url("../images/back_2.jpg");
@@ -112,6 +90,25 @@
     margin-right: auto;
 }
 
+.cel {
+    height: 700px;
+}
+
+.cel .opis_celu {
+    text-align: center;
+    top: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.opis_celu {
+    font-family: 'Marcellus SC', serif;
+    letter-spacing: 1px;
+    color: #d9dde7;
+    font-weight: 100;
+    font-size: 40px;
+}
 
 .cudzy_1 {
     font-family: 'Roboto Slab', serif;
@@ -139,7 +136,7 @@
 }
 
 .pudelko {
-    /*top: 50px;*/
+    top: 50px;
     width: 400px;
     height: 250px;
     background-color: rgba(255, 0, 0, 0.1);
@@ -151,9 +148,7 @@
     position: relative;
     overflow: hidden;
 
-
 }
-
 
 .pudelko:hover img {
     filter: none;
@@ -161,9 +156,10 @@
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
 }
-/*.pudelko:hover .teskt_opisu{*/
-    /*-webkit-filter: grayscale(0%);*/
 
+/*.pudelko:hover .teskt_opisu{*/
+/*-webkit-filter: grayscale(0%);*/
+/*}*/
 
 .pudelko:nth-child(2n) {
     background-color: rgba(0, 255, 0, 0.1);
@@ -173,6 +169,7 @@
     background-color: #454b4f;
     background-color: rgba(0, 0, 0, 0.7);
     font-family: 'Exo 2', sans-serif;
+    /* */
     font-weight: 500;
     font-size: 15px;
     color: RGBa(255, 255, 255, 1);
@@ -192,11 +189,65 @@
 
 .naglowek {
     font-family: 'Exo 2', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     vertical-align: 0.8em;
     color: #a27854;
     letter-spacing: 1px;
     font-size: 20px;
+}
+
+.naglowek_ik {
+    padding-top: 15px;
+    /*top: 80px;*/
+    left: auto;
+    right: auto;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    vertical-align: 0.8em;
+    /*padding: 00px;*/
+    color: #a27854;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+/*.pudelko_ikon .ikony img {*/
+    /*position: absolute;*/
+/*}*/
+
+.pudelko_ikon {
+    width: auto;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pudelko_ikon .ikony {
+    top: 50px;
+    margin-top: 30px;
+    width: 280px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.pudelko_ikon .ikony img {
+    width: 40px;
+    /*opacity: 1.0;*/
+    transition-duration: 500ms;
+    /*position: absolute;*/
+}
+
+.pudelko_ikon .ikony .naglowek_ik {
+    display: block;
+}
+
+.ikony img:hover {
+    transform: scale(1.30,1.30);
+    transition-timing-function: ease-out;
+    transition-duration: 500ms;
 }
 
 /*stopka*/
