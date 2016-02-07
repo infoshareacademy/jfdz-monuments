@@ -1,5 +1,3 @@
-
-
 footer {
     background-color: black;
     font-family: 'Exo 2', sans-serif;
@@ -65,7 +63,7 @@ footer input {
 input[type="submit"] {
 
     background-color: transparent;
-    color: #a27854;
+    color: #a27854 ;
     padding: 7px;
     font-family: 'Exo 2', sans-serif;
     font-weight: 200;
@@ -81,7 +79,7 @@ input[type="email"]:invalid {
 }
 
 input[type="submit"]:hover {
-    color: #a27854;
+    color: #a27854 ;
 
 }
 
