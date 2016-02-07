@@ -1,5 +1,3 @@
-
-
 footer {
     background-color: black;
     font-family: 'Exo 2', sans-serif;
@@ -8,13 +6,23 @@ footer {
     letter-spacing: 3px;
     font-size: 20px;
     background-image: url("../images/back.jpg");
-    height: 300px;
+    height: 250px;
     width: 1200px;
+    font-size: 16px;
     margin: auto;
     text-align: center;
-
 }
-.social_media  {
+
+footer .footer-text {
+    font-size: 20px;
+    font-size: 16px;
+}
+
+footer .mail {
+    padding: 5px;
+}
+
+.media  {
     width: 40px;
     height: 40px;
     display: inline-block;
@@ -26,22 +34,40 @@ footer {
 }
 
 
-
-input[type="email"] {
+footer input {
     color: white;
     border: solid 1px;
     background-color: transparent;
-    padding: 7px;
-    margin-left: 82px;
+    padding: 5px;
+    margin-left: auto;
+    margin-top: 5px;
 }
+
+
+/*input[type="email"] {*/
+    /*color: white;*/
+    /*border: solid 1px;*/
+    /*background-color: transparent;*/
+    /*padding: 7px;*/
+    /*margin-left: 82px;*/
+/*}*/
+
+/*input[type="telefon"] {*/
+    /*color: white;*/
+    /*border: solid 1px;*/
+    /*background-color: transparent;*/
+    /*padding: 9px;*/
+    /*margin-left: 82px;*/
+/*}*/
 
 input[type="submit"] {
 
     background-color: transparent;
-    color: #a27854;
+    color: #a27854 ;
     padding: 7px;
     font-family: 'Exo 2', sans-serif;
     font-weight: 200;
+    color: white;
     letter-spacing: 3px;
     font-size: 15px;
     border: 0px;
@@ -53,7 +79,7 @@ input[type="email"]:invalid {
 }
 
 input[type="submit"]:hover {
-    color: #a27854;
+    color: #a27854 ;
 
 }
 
