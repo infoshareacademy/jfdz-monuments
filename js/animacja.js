@@ -4,7 +4,12 @@
 
 
 function wplywanieElementow(){
+<<<<<<< HEAD
 //$('.zajawka-tekst').fadeIn(1000);
+=======
+$('.zajawka-tekst').fadeIn(1000);
+
+>>>>>>> 2f3641a95d2d429b80bcb42a809ac7342298ca35
 };
 
 

@@ -21,7 +21,7 @@
     color: #a27854;
     letter-spacing: 3px;
     font-size: 50px;
-    left: 260px;
+    left: 281px;
     bottom: 55px;
     position: absolute;
 }
@@ -32,7 +32,7 @@
     width: 100px;
     height: 100px;
     top: 20px;
-    left: 20px;
+    left: 70px;
     padding: 0px;
     position: absolute;
 }
@@ -78,7 +78,30 @@
 
 }
 
-/*opis celu*/
+/*opis zajawki*/
+.zajawka {
+    width: 1200px; height: 200px;
+    background-image: url("../images/panorama.jpg");
+    font-size: 20px;
+
+    color:black;
+    text-align: center;
+
+
+
+}
+.zajawka-tekst{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size:27px;
+    letter-spacing: 1px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+ }
+    /*opis celu*/
+
 .content_2 {
     width: 1200px;
     background-image: url("../images/back_2.jpg");
@@ -117,7 +140,7 @@
 }
 
 .pudelko {
-    top: 50px;
+    /*top: 50px;*/
     width: 400px;
     height: 250px;
     background-color: rgba(255, 0, 0, 0.1);
@@ -141,7 +164,7 @@
 }
 /*.pudelko:hover .teskt_opisu{*/
     /*-webkit-filter: grayscale(0%);*/
-}
+
 
 .pudelko:nth-child(2n) {
     background-color: rgba(0, 255, 0, 0.1);
