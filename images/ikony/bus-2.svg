@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;}
-</style>
-<circle class="st0" cx="8" cy="17" r="0.7"/>
-<circle class="st0" cx="16" cy="17" r="0.7"/>
-<rect x="21.3" y="8.4" class="st0" width="1.3" height="3.3"/>
-<rect x="1.4" y="8.4" class="st0" width="1.3" height="3.3"/>
-<path class="st0" d="M18,3.4H6C5.1,3.4,4.4,4.1,4.4,5v16c0,0.9,0.7,1.7,1.6,1.7s1.6-0.7,1.6-1.7v-0.3h8.7V21c0,0.9,0.7,1.7,1.7,1.7
-	s1.7-0.7,1.7-1.7V5C19.7,4.1,18.9,3.4,18,3.4z M18.3,19.3H5.6v-4.7h12.7V19.3z M18.3,13.3H5.6V8.6h12.7V13.3z M18.3,7.4H5.6V4.6
-	h12.7V7.4z"/>
+	 width="510.2px" height="368.5px" viewBox="0 0 510.2 368.5" enable-background="new 0 0 510.2 368.5" xml:space="preserve">
+<circle fill="#FFFFFF" cx="175.5" cy="259.2" r="13.3"/>
+<circle fill="#FFFFFF" cx="327.5" cy="259.2" r="13.3"/>
+<rect x="428.1" y="95.9" fill="#FFFFFF" width="24.7" height="62.7"/>
+<rect x="50.1" y="95.9" fill="#FFFFFF" width="24.7" height="62.7"/>
+<path fill="#FFFFFF" d="M365.5,0.9h-228c-17.1,0-30.4,13.3-30.4,30.4v304c0,17.1,13.3,32.3,30.4,32.3s30.4-13.3,30.4-32.3v-5.7
+	h165.3v5.7c0,17.1,13.3,32.3,32.3,32.3c19,0,32.3-13.3,32.3-32.3v-304C397.8,14.2,382.6,0.9,365.5,0.9z M371.2,302.9H129.9v-89.3
+	h241.3V302.9z M371.2,189H129.9V99.7h241.3V189z M371.2,76.9H129.9V23.7h241.3V76.9z"/>
 </svg>

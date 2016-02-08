@@ -200,7 +200,7 @@
 }
 
 .naglowek_ik {
-    padding-top: 15px;
+    padding-top: 20px;
     /*top: 80px;*/
     left: auto;
     right: auto;
@@ -219,14 +219,14 @@
 
 .pudelko_ikon {
     width: auto;
-    height: 340px;
+    height: 328px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .pudelko_ikon .ikony {
-    top: 50px;
-    margin-top: 30px;
+    top: 30px;
+    margin-top: 20px;
     width: 280px;
     padding: 10px;
     display: inline-block;
