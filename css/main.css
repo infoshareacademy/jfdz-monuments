@@ -37,16 +37,44 @@
     position: absolute;
 }
 
-.naglowek-strony .menu {
+.menu {
     font-family: 'Exo 2', sans-serif;
     font-weight: 100;
     font-size: 22px;
     color: RGBa(255, 255, 255, 0.8);
     padding: 10px;
-    position: absolute;
+    position: static;
     bottom: 53px;
     right: 50px;
+    float: right;
+    margin-top: 51px;
+    margin-right: 27px;
 }
+/*próby ze sticky menu*/
+
+.sticky {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    color: RGBa(255, 255, 255, 0.8);
+    padding: 18px;
+    height: 17px;
+    width: 328px;
+    left: 867px;
+    border-radius: 13px;
+    top: -51px;
+    background-image: url("../images/back.jpg");
+    position: fixed;
+    z-index: 100000;
+    transition: all 0.4s ease;
+    opacity: 0.7;
+    margin-right: 0px;
+    right: 0px;
+    margin-top: 50px;
+
+}
+
+
 
 
 .left {
@@ -61,12 +89,12 @@
     clear: both;
 }
 
-.naglowek-strony .menu li{
+.naglowek-strony .menu li {
     display: inline;
     padding: 10px;
+    padding-bottom: -37px;
     font-weight: 200;
     font-family: 'Exo 2', sans-serif;
-
 }
 .naglowek-strony .menu li a   {
     text-decoration: none;
