@@ -17,20 +17,31 @@
           rel='stylesheet' type='text/css'>
     <title>Zabytki Gdańska</title>
     <link rel="shortcut icon" href="images/icon_2.png" type="image/x-icon"/>
-    <script src="js/jquery-2.1.4.min.js"></script>
+    <!--<script src="js/jquery-2.1.4.min.js"></script>-->
+    <script src="js/jquery-1.12.0.js"></script>
 </head>
 <body>
 <header class="naglowek-strony content">
     <div class="logo"></div>
-    <nav class="tytul">ZABYTKI GDAŃSKA</nav>
-    <nav class="menu">
+    <div class="tytul">ZABYTKI GDAŃSKA</div>
+    <div class="menu">
         <ul>
             <li><a href="#projekt">O Projekcie</a></li>
             <li><a href="#Stocznia">Zabytki</a></li>
             <li><a href="#Copyright">Kontakt</a></li>
         </ul>
-    </nav>
+    </div>
     <div class="clear"></div>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 1){
+                $('div.menu').addClass("sticky");
+            }
+            else{
+                $('div.menu').removeClass("sticky");
+            }
+        });
+    </script>
 
 </header>
 
@@ -171,6 +182,7 @@
 
         <span>Copyright&copy 2015 TeamLoża</span>
         <div class="clear"></div>
+
 
 
 </footer>
