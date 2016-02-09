@@ -80,9 +80,10 @@
 
 /*opis zajawki*/
 .zajawka {
-    width: 1200px; height: 250px;
+    width: 1200px; height: 282px;
     background-image: url("../images/Gdansk_zajawka.svg");
     font-size: 20px;
+    padding-top: 20px;
     color:white;
     text-align: center;
 
@@ -95,7 +96,7 @@
     font-style: italic;
     font-size:24px;
     letter-spacing: 3px;
-    padding: 60px;
+    padding: 25px;
     margin-left: auto;
     margin-right: auto;
  }
