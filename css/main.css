@@ -48,7 +48,6 @@
     right: 50px;
 }
 
-
 .left {
     float: left;
 }
@@ -61,14 +60,47 @@
     clear: both;
 }
 
-.naglowek-strony .menu li{
+.parallax {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.parallax-back {
+    transform: translateZ(-1px);
+}
+
+.parallax-base {
+    transform: translateZ(0);
+}
+
+.parallax-group {
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
+
+.naglowek-strony .menu li {
     display: inline;
     padding: 10px;
     font-weight: 200;
     font-family: 'Exo 2', sans-serif;
 
 }
-.naglowek-strony .menu li a   {
+
+.naglowek-strony .menu li a {
     text-decoration: none;
     color: white;
 }
@@ -80,27 +112,28 @@
 
 /*opis zajawki*/
 .zajawka {
-    width: 1200px; height: 282px;
-    background-image: url("../images/Gdansk_zajawka.svg");
+    width: 1200px;
+    height: 282px;
+    background-image: url("../images/panorama.jpg");
     font-size: 20px;
     padding-top: 20px;
-    color:white;
+    color: white;
     text-align: center;
 
-
-
 }
-.zajawka-tekst{
+
+.zajawka-tekst {
     font-family: 'Exo 2', sans-serif;
     font-weight: 100;
     font-style: italic;
-    font-size:24px;
+    font-size: 24px;
     letter-spacing: 3px;
     padding: 25px;
     margin-left: auto;
     margin-right: auto;
- }
-    /*opis celu*/
+}
+
+/*opis celu*/
 
 .content_2 {
     width: 1200px;
@@ -112,7 +145,6 @@
     margin-left: auto;
     margin-right: auto;
 }
-
 
 .cudzy_1 {
     font-family: 'Roboto Slab', serif;
@@ -152,9 +184,7 @@
     position: relative;
     overflow: hidden;
 
-
 }
-
 
 .pudelko:hover img {
     filter: none;
@@ -162,9 +192,9 @@
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
 }
-/*.pudelko:hover .teskt_opisu{*/
-    /*-webkit-filter: grayscale(0%);*/
 
+/*.pudelko:hover .teskt_opisu{*/
+/*-webkit-filter: grayscale(0%);*/
 
 .pudelko:nth-child(2n) {
     background-color: rgba(0, 255, 0, 0.1);
@@ -215,7 +245,7 @@
 }
 
 /*.pudelko_ikon .ikony img {*/
-    /*position: absolute;*/
+/*position: absolute;*/
 /*}*/
 
 .pudelko_ikon {
@@ -249,7 +279,7 @@
 }
 
 .ikony img:hover {
-    transform: scale(1.30,1.30);
+    transform: scale(1.30, 1.30);
     transition-timing-function: ease-out;
     transition-duration: 500ms;
 }
