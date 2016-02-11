@@ -1,7 +1,8 @@
 .funkcjonalnosci {
     /*background-color: #FEFEFE;*/
     /*background-image: url('../image/back_2.jpg');*/
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     /*text-align: center;*/
     padding-top: 0px;
     /*padding-bottom: 10px;*/
@@ -13,8 +14,8 @@
     /*czemu jak dam 400 px to tekst ostatni sie przesunie*/
     text-align: center;
     /*border: solid 1px;*/
-    margin-top: 50px;
-    margin-bottom: 70px;
+    margin-top: 15px;
+    margin-bottom: 30px;
     padding-top: 85px;
     padding-bottom: 20px;
     background-color: transparent;
