@@ -109,8 +109,22 @@ body {
     /*color: rgba(0,0,0,0.0);*/
     color:white;
     animation: fadein 4s;
+    -webkit-animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    animation: fadein 4s;
+
 
  }
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
 @keyframes fadein {
     from { opacity: 0; }
