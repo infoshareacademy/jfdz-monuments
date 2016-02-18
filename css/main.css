@@ -261,13 +261,14 @@ body {
     transition-duration: 500ms;
 }
 
+
 /*stopka*/
 
-.stopka-strony {
-    height: 50px;
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 100;
-    color: #a27854;
-    letter-spacing: 3px;
-    font-size: 10px;
-}
+/*.stopka-strony {*/
+    /*height: 50px;*/
+    /*font-family: 'Exo 2', sans-serif;*/
+    /*font-weight: 100;*/
+    /*color: #a27854;*/
+    /*letter-spacing: 3px;*/
+    /*font-size: 10px;*/
+/*}*/
