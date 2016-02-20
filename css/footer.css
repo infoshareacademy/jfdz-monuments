@@ -1,20 +1,30 @@
-
-
 footer {
     background-color: black;
+    background-image: url("../images/back.jpg");
+    height: 270px;
+    width: 1200px;
+    margin: auto;
     font-family: 'Exo 2', sans-serif;
-    font-weight: 150;
+    font-size: 16px;
+    font-weight: 200;
     color: #a27854;
     letter-spacing: 3px;
-    font-size: 20px;
-    background-image: url("../images/back.jpg");
-    height: 200px;
-    width: 1200px;
-    font-size: 16px;
-    margin: auto;
     text-align: center;
+    border: solid;
+    border-color: #a27854;
+    border-width: 2px;
+}
+
+footer .footer-text {
+    font-size: 16px;
+    padding: 12px;
 
 }
+
+footer .mail {
+    padding: 5px;
+}
+
 .media  {
     width: 40px;
     height: 40px;
@@ -27,26 +37,44 @@ footer {
 }
 
 
-
-input[type="email"] {
+footer input {
     color: white;
     border: solid 1px;
     background-color: transparent;
-    padding: 7px;
-    margin-left: 82px;
+    padding: 5px;
+    margin-left: auto;
+    margin-top: 5px;
 }
+
+
+
+
+/*input[type="email"] {*/
+    /*color: white;*/
+    /*border: solid 1px;*/
+    /*background-color: transparent;*/
+    /*padding: 7px;*/
+    /*margin-left: 82px;*/
+/*}*/
+
+/*input[type="telefon"] {*/
+    /*color: white;*/
+    /*border: solid 1px;*/
+    /*background-color: transparent;*/
+    /*padding: 9px;*/
+    /*margin-left: 82px;*/
+/*}*/
 
 input[type="submit"] {
 
     background-color: transparent;
-    color: #a27854;
+    color: white;
     padding: 7px;
     font-family: 'Exo 2', sans-serif;
-    font-weight: 150;
-    color: white;
+    font-weight: 200;
     letter-spacing: 3px;
     font-size: 15px;
-    border: 0px;
+    border: 5px;
 
 }
 
@@ -54,8 +82,12 @@ input[type="email"]:invalid {
     border: 2px solid red;
 }
 
+input[type="tel"]:invalid {
+    border: 2px solid red;
+}
+
 input[type="submit"]:hover {
-    color: #a27854;
+    color: #a27854 ;
 
 }
 
