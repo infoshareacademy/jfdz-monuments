@@ -85,11 +85,11 @@ input[type="submit"] {
 }
 
 input[type="email"]:invalid {
-    border: 2px solid red;
+    border: 2px solid ;
 }
 
 input[type="tel"]:invalid {
-    border: 2px solid red;
+    border: 2px solid ;
 }
 
 input[type="submit"]:hover {
