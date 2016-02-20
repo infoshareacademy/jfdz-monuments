@@ -1,6 +1,11 @@
 footer {
     background-color: black;
+    background-image: url("../images/back.jpg");
+    height: 270px;
+    width: 1200px;
+    margin: auto;
     font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
     font-weight: 200;
     color: #a27854;
     letter-spacing: 3px;
@@ -11,16 +16,16 @@ footer {
     font-size: 16px;
     margin: auto;
     text-align: center;
-
+    border: solid;
+    border-color: #a27854;
+    border-width: 2px;
 }
 
 footer .footer-text {
-    font-size: 20px;
-    padding-top: 10px;
+    font-size: 16px;
+    padding: 12px;
 
-
-
-    }
+}
 
 footer .mail {
     padding: 5px;
@@ -48,6 +53,8 @@ footer input {
 }
 
 
+
+
 /*input[type="email"] {*/
     /*color: white;*/
     /*border: solid 1px;*/
@@ -67,18 +74,21 @@ footer input {
 input[type="submit"] {
 
     background-color: transparent;
-    color: #a27854 ;
+    color: white;
     padding: 7px;
     font-family: 'Exo 2', sans-serif;
     font-weight: 200;
-    color: white;
     letter-spacing: 3px;
     font-size: 15px;
-    border: 0px;
+    border: 5px;
 
 }
 
 input[type="email"]:invalid {
+    border: 2px solid red;
+}
+
+input[type="tel"]:invalid {
     border: 2px solid red;
 }
 

@@ -1,3 +1,10 @@
+body {
+    background-image: url("../images/panorama_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+}
+
 .content {
     width: 1200px;
     background-image: url("../images/back.jpg");
@@ -46,6 +53,7 @@
     position: absolute;
     bottom: 53px;
     right: 50px;
+    box-shadow: 3px 3px 10px #a27854, #a27854 -3px 3px 10px, 3px -3px 10px;
 }
 
 
@@ -80,11 +88,11 @@
 
 /*opis zajawki*/
 .zajawka {
-    width: 1200px; height: 200px;
-    background-image: url("../images/panorama.jpg");
+    width: 1200px; height: 282px;
+    background-image: url("../images/Gdansk_zajawka.svg");
     font-size: 20px;
-
-    color:black;
+    padding-top: 20px;
+    color:white;
     text-align: center;
 
 
@@ -92,10 +100,11 @@
 }
 .zajawka-tekst{
     font-family: 'Exo 2', sans-serif;
-    font-weight: 500;
-    font-size:27px;
-    letter-spacing: 1px;
-    padding: 40px;
+    font-weight: 100;
+    font-style: italic;
+    font-size:24px;
+    letter-spacing: 3px;
+    padding: 25px;
     margin-left: auto;
     margin-right: auto;
  }
@@ -199,13 +208,68 @@
     font-size: 20px;
 }
 
+.naglowek_ik {
+    padding-top: 20px;
+    /*top: 80px;*/
+    left: auto;
+    right: auto;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    vertical-align: 0.8em;
+    /*padding: 00px;*/
+    color: #a27854;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+/*.pudelko_ikon .ikony img {*/
+    /*position: absolute;*/
+/*}*/
+
+.pudelko_ikon {
+    width: auto;
+    height: 328px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pudelko_ikon .ikony {
+    top: 30px;
+    margin-top: 20px;
+    width: 280px;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.pudelko_ikon .ikony img {
+    width: 40px;
+    /*opacity: 1.0;*/
+    transition-duration: 500ms;
+    /*position: absolute;*/
+}
+
+.pudelko_ikon .ikony .naglowek_ik {
+    display: block;
+}
+
+.ikony img:hover {
+    transform: scale(1.30,1.30);
+    transition-timing-function: ease-out;
+    transition-duration: 500ms;
+}
+
+
 /*stopka*/
 
-.stopka-strony {
-    height: 50px;
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 100;
-    color: #a27854;
-    letter-spacing: 3px;
-    font-size: 10px;
-}
+/*.stopka-strony {*/
+    /*height: 50px;*/
+    /*font-family: 'Exo 2', sans-serif;*/
+    /*font-weight: 100;*/
+    /*color: #a27854;*/
+    /*letter-spacing: 3px;*/
+    /*font-size: 10px;*/
+/*}*/
