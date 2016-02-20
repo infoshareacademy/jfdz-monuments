@@ -94,7 +94,9 @@ body {
     padding-top: 20px;
     color:white;
     text-align: center;
-
+    /*background-attachment: fixed;*/
+    /*background-position: center 152px;*/
+    background-repeat: no-repeat;
 
 
 }
@@ -104,11 +106,34 @@ body {
     font-style: italic;
     font-size:24px;
     letter-spacing: 3px;
-    padding: 25px;
+    padding: 28px;
     margin-left: auto;
     margin-right: auto;
+    /*color: rgba(0,0,0,0.0);*/
+    color:white;
+    animation: fadein 4s;
+    -webkit-animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    animation: fadein 4s;
+
+
  }
-    /*opis celu*/
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 
 .content_2 {
     width: 1200px;
@@ -208,7 +233,7 @@ body {
     font-size: 20px;
 }
 
-.naglowek_ik {
+.naglowek_ikon {
     padding-top: 20px;
     /*top: 80px;*/
     left: auto;
