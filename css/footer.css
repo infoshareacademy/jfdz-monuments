@@ -6,17 +6,21 @@ footer {
     letter-spacing: 3px;
     font-size: 20px;
     background-image: url("../images/back.jpg");
-    height: 250px;
+    height: 260px;
     width: 1200px;
     font-size: 16px;
     margin: auto;
     text-align: center;
+
 }
 
 footer .footer-text {
     font-size: 20px;
-    font-size: 16px;
-}
+    padding-top: 10px;
+
+
+
+    }
 
 footer .mail {
     padding: 5px;
