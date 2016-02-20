@@ -1,3 +1,10 @@
+body {
+    background-image: url("../images/panorama_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 150%;
+}
+
 .content {
     width: 1200px;
     background-image: url("../images/back.jpg");
@@ -80,27 +87,52 @@
 
 /*opis zajawki*/
 .zajawka {
-    width: 1200px; height: 200px;
-    background-image: url("../images/panorama.jpg");
+    width: 1200px; height: 282px;
+    background-image: url("../images/Gdansk_zajawka.svg");
     font-size: 20px;
-
-    color:black;
+    padding-top: 20px;
+    color:white;
     text-align: center;
-
+    /*background-attachment: fixed;*/
+    /*background-position: center 152px;*/
+    background-repeat: no-repeat;
 
 
 }
 .zajawka-tekst{
     font-family: 'Exo 2', sans-serif;
-    font-weight: 500;
-    font-size:27px;
-    letter-spacing: 1px;
-    padding: 40px;
+    font-weight: 100;
+    font-style: italic;
+    font-size:24px;
+    letter-spacing: 3px;
+    padding: 28px;
     margin-left: auto;
     margin-right: auto;
-    /*display: none;*/
+    /*color: rgba(0,0,0,0.0);*/
+    color:white;
+    animation: fadein 4s;
+    -webkit-animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    animation: fadein 4s;
+
+
  }
-    /*opis celu*/
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 
 .content_2 {
     width: 1200px;
@@ -201,7 +233,7 @@
 }
 
 .naglowek_ik {
-    padding-top: 15px;
+    padding-top: 20px;
     /*top: 80px;*/
     left: auto;
     right: auto;
@@ -220,14 +252,14 @@
 
 .pudelko_ikon {
     width: auto;
-    height: 340px;
+    height: 328px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .pudelko_ikon .ikony {
-    top: 50px;
-    margin-top: 30px;
+    top: 30px;
+    margin-top: 20px;
     width: 280px;
     padding: 10px;
     display: inline-block;
@@ -239,7 +271,7 @@
 
 .pudelko_ikon .ikony img {
     width: 40px;
-    opacity: 0.8;
+    /*opacity: 1.0;*/
     transition-duration: 500ms;
     /*position: absolute;*/
 }
