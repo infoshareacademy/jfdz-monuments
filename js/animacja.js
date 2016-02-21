@@ -43,19 +43,26 @@ $(document).on('scroll', onScroll);
         //smoothscroll
         $('a[href^="#"]').on('click', function (e) {
             e.preventDefault();
+            //wylaczamy domyslne zachowanie przegladarki dla klikniec w menu
             $(document).off("scroll");
-
+            //wylacza scroll
             $('a').each(function () {
                 $(this).removeClass('active');
             })
+            //odczepia klase active
             $(this).addClass('active');
+            ///doczepia klase active do kliknietego elementu
 
             var target = this.hash,
                 menu = target;
             $target = $(target);
+
             $('html, body').stop().animate({
+                //zatrzymanie pozostalych animacji w body i odpala nowa animacje jak nizej
                 'scrollTop': $target.offset().top+2
+                //przewijamy nasza strone do miejsca gdzie zaczyna sie div
             }, 1000, 'swing', function () {
+                //wywolujemy callback o tresci jak nizej
                 window.location.hash = target;
                 $(document).on("scroll", onScroll);
             });
