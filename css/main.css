@@ -5,6 +5,14 @@ body {
     background-size: 150%;
 }
 
+/*.active {*/
+    /*font-family:'Droid Sans', serif;*/
+    /*font-size: 14px;*/
+    /*color: #fff;*/
+    /*text-decoration: none;*/
+    /*line-height: 50px;*/
+/*}*/
+
 .content {
     width: 1200px;
     background-image: url("../images/back.jpg");
@@ -103,9 +111,19 @@ body {
     font-weight: 200;
     font-family: 'Exo 2', sans-serif;
 }
-.naglowek-strony .menu li a   {
+
+.menu a {
     text-decoration: none;
     color: white;
+}
+
+/*.naglowek-strony .menu li a   {*/
+    /*text-decoration: none;*/
+    /*color: white;*/
+/*}*/
+
+.menu .active {
+    color: #a27854;
 }
 
 .naglowek-strony .menu li a:hover {
