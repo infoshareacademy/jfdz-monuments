@@ -23,7 +23,7 @@ footer .footer-text {
 
 footer .footer_kontener {
     margin: 0 auto;
-    width: 300px;
+    width: 280px;
 
 }
 .clear{
@@ -89,8 +89,11 @@ input[type="submit"] {
 
 }
 
+}
+
 input[type="email"]:invalid {
     border: 2px solid ;
+
 }
 
 input[type="tel"]:invalid {
