@@ -9,6 +9,12 @@ footer {
     font-weight: 200;
     color: #a27854;
     letter-spacing: 3px;
+    font-size: 20px;
+    background-image: url("../images/back.jpg");
+    height: 260px;
+    width: 1200px;
+    font-size: 16px;
+    margin: auto;
     text-align: center;
     border: solid;
     border-color: #a27854;
@@ -21,8 +27,19 @@ footer .footer-text {
 
 }
 
+footer .footer_kontener {
+    margin: 0 auto;
+    width: 300px;
+
+}
+.clear{
+    clear: both;
+}
+
 footer .mail {
     padding: 5px;
+    float: right;
+
 }
 
 .media  {
@@ -79,11 +96,11 @@ input[type="submit"] {
 }
 
 input[type="email"]:invalid {
-    border: 2px solid red;
+    border: 2px solid ;
 }
 
 input[type="tel"]:invalid {
-    border: 2px solid red;
+    border: 2px solid ;
 }
 
 input[type="submit"]:hover {

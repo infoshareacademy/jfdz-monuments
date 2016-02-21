@@ -44,7 +44,7 @@ body {
     position: absolute;
 }
 
-.menu {
+.naglowek-strony .menu {
     font-family: 'Exo 2', sans-serif;
     font-weight: 100;
     font-size: 22px;
@@ -53,6 +53,7 @@ body {
     position: static;
     bottom: 53px;
     right: 50px;
+    box-shadow: 3px 3px 10px #a27854, #a27854 -3px 3px 10px, 3px -3px 10px;
     float: right;
     margin-top: 51px;
     margin-right: 27px;
@@ -96,12 +97,13 @@ body {
     clear: both;
 }
 
-.naglowek-strony .menu li {
+.naglowek-strony .menu li{
     display: inline;
     padding: 10px;
     padding-bottom: -37px;
     font-weight: 200;
     font-family: 'Exo 2', sans-serif;
+
 }
 .naglowek-strony .menu li a   {
     text-decoration: none;
@@ -268,7 +270,7 @@ body {
     font-size: 20px;
 }
 
-.naglowek_ikon{
+.naglowek_ikon {
     padding-top: 20px;
     /*top: 80px;*/
     left: auto;
