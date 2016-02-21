@@ -50,11 +50,39 @@ body {
     font-size: 22px;
     color: RGBa(255, 255, 255, 0.8);
     padding: 10px;
-    position: absolute;
+    position: static;
     bottom: 53px;
     right: 50px;
     box-shadow: 3px 3px 10px #a27854, #a27854 -3px 3px 10px, 3px -3px 10px;
+    float: right;
+    margin-top: 51px;
+    margin-right: 27px;
 }
+/*próby ze sticky menu*/
+
+.sticky {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    color: RGBa(255, 255, 255, 0.8);
+    padding: 18px;
+    height: 17px;
+    width: 342px;
+    left: 1143px;
+    border-radius: 13px;
+    top: -51px;
+    background-image: url("../images/back.jpg");
+    position: fixed;
+    z-index: 100000;
+    transition: all 0.4s ease;
+    opacity: 0.7;
+    margin-right: 0px;
+    right: 0px;
+    margin-top: 50px;
+
+}
+
+
 
 
 .left {
@@ -72,6 +100,7 @@ body {
 .naglowek-strony .menu li{
     display: inline;
     padding: 10px;
+    padding-bottom: -37px;
     font-weight: 200;
     font-family: 'Exo 2', sans-serif;
 
@@ -287,14 +316,13 @@ body {
     transition-duration: 500ms;
 }
 
-
 /*stopka*/
 
-/*.stopka-strony {*/
-    /*height: 50px;*/
-    /*font-family: 'Exo 2', sans-serif;*/
-    /*font-weight: 100;*/
-    /*color: #a27854;*/
-    /*letter-spacing: 3px;*/
-    /*font-size: 10px;*/
-/*}*/
+.stopka-strony {
+    height: 50px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+    color: #a27854;
+    letter-spacing: 3px;
+    font-size: 10px;
+}

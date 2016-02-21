@@ -23,15 +23,25 @@
 <body>
 <header class="naglowek-strony content">
     <div class="logo"></div>
-    <nav class="tytul">ZABYTKI GDAŃSKA</nav>
-    <nav class="menu">
+    <div class="tytul">ZABYTKI GDAŃSKA</div>
+    <div class="menu">
         <ul>
             <li><a href="#projekt">O Projekcie</a></li>
             <li><a href="#Stocznia">Zabytki</a></li>
             <li><a href="#Copyright">Kontakt</a></li>
         </ul>
-    </nav>
+    </div>
     <div class="clear"></div>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 1){
+                $('div.menu').addClass("sticky");
+            }
+            else{
+                $('div.menu').removeClass("sticky");
+            }
+        });
+    </script>
 
 </header>
 
@@ -66,7 +76,7 @@
         <div class="funkcjonalnosc funkcjonalnosc-3">
             <h1>Zabytki w jednym miejscu</h1>
             <div class="tresc">
-                Dzięki naszej aplikacji zwiedzanie Gdańska<br> już nigdy nie będzie nudne.
+                Dzięki naszej aplikacji zwiedzanie Gdańska</br> już nigdy nie będzie nudne.
             </div>
         </div>
 
@@ -84,7 +94,7 @@
 
             </div>
             <div class="pudelko">
-                <!--Marcin-->
+
                 <img src="images/zuraw.jpg" alt="zuraw">
 
                 <div class="teskt_opisu"><span class="cudzy_2">&#9679;</span><span class="naglowek">Żuraw</span> <br>
@@ -110,7 +120,7 @@
                         class="naglowek">Gdański Dworzec</span><br>
                 Reprezentacyjny i przestronny Dworzec Główny został wybudowany w latach 1894-1900, w stylu tzw. "gdańskiego renesansu".
                 Projektantami kompleksu dworcowego byli Alexander Rundel, Paul Thomer i Georg Cuny.
-                <br>
+                </br>
                 </div>
             </div>
 
@@ -120,7 +130,7 @@
                         class="naglowek">Bazylika Mariacka</span> <br>
                     Bazylika Mariacka zwana "koroną miasta Gdańska" - Kościół Wniebowzięcia Najświętszej Marii Panny.
                     Największa ceglana, gotycka świątynia w Europie, powstawał 159 lat w kilku etapach w latach 1343-1502.
-                    <br>
+                    </br>
                 </div>
             </div>
             <div class="pudelko"><img src="images/neptun.jpg" alt="neptun">
