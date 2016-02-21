@@ -89,7 +89,6 @@ input[type="submit"] {
 
 }
 
-}
 
 input[type="email"]:invalid {
     border: 2px solid ;
