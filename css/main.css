@@ -115,6 +115,14 @@ body {
 
 }
 
+.active {
+    font-weight: 200;
+    font-family: 'Exo 2', sans-serif;
+    text-decoration: none;
+    line-height: 20px;
+    background-color: red;
+}
+
 /*opis zajawki*/
 .zajawka {
     width: 1200px; height: 282px;
