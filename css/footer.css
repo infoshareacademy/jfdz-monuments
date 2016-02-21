@@ -1,20 +1,14 @@
 footer {
     background-color: black;
     background-image: url("../images/back.jpg");
-    height: 270px;
     width: 1200px;
+    height: 280px;
     margin: auto;
     font-family: 'Exo 2', sans-serif;
     font-size: 16px;
     font-weight: 200;
     color: #a27854;
     letter-spacing: 3px;
-    font-size: 20px;
-    background-image: url("../images/back.jpg");
-    height: 260px;
-    width: 1200px;
-    font-size: 16px;
-    margin: auto;
     text-align: center;
     border: solid;
     border-color: #a27854;
@@ -29,7 +23,7 @@ footer .footer-text {
 
 footer .footer_kontener {
     margin: 0 auto;
-    width: 300px;
+    width: 280px;
 
 }
 .clear{
@@ -95,8 +89,10 @@ input[type="submit"] {
 
 }
 
+
 input[type="email"]:invalid {
     border: 2px solid ;
+
 }
 
 input[type="tel"]:invalid {
