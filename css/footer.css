@@ -27,8 +27,19 @@ footer .footer-text {
 
 }
 
+footer .footer_kontener {
+    margin: 0 auto;
+    width: 300px;
+
+}
+.clear{
+    clear: both;
+}
+
 footer .mail {
     padding: 5px;
+    float: right;
+
 }
 
 .media  {
