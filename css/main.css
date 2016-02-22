@@ -19,7 +19,7 @@ body {
 /*style naglowka*/
 .naglowek-strony {
     position: relative;
-    height: 150px;
+    height: 180px;
 }
 
 .naglowek-strony .tytul {
@@ -29,7 +29,7 @@ body {
     letter-spacing: 3px;
     font-size: 50px;
     left: 281px;
-    bottom: 55px;
+    bottom: 85px;
     position: absolute;
 }
 
@@ -120,24 +120,20 @@ body {
 
 /*opis zajawki*/
 .zajawka {
-    width: 1200px; height: 420px;
+    width: 1200px; height: 450px;
     background: url("../images/Gdansk_zajawka.svg") no-repeat fixed;
     font-size: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     color:white;
     text-align: center;
-    /*background-attachment: fixed;*/
-    background-position: center 122px;
-    /*background-repeat: ;*/
+    background-position: center 112px;
     overflow: hidden;
 
 
 }
 .zajawka-tekst{
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 100;
-    font-style: italic;
-    font-size:24px;
+    font-family: 'Parisienne', cursive;
+    font-size:30px;
     letter-spacing: 3px;
     /*padding: 0px;*/
     text-align: center;
@@ -311,7 +307,7 @@ body {
     /*position: absolute;*/
 }
 
-.pudelko_ikon .ikony .naglowek_ik {
+.pudelko_ikon .ikony .naglowek_ikon {
     display: block;
 }
 
