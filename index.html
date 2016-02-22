@@ -17,39 +17,45 @@
           rel='stylesheet' type='text/css'>
     <title>Zabytki Gdańska</title>
     <link rel="shortcut icon" href="images/icon_2.png" type="image/x-icon"/>
-    <script src="js/jquery-1.3.2.min.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/animacja.js"></script>
-    <!--<script src="js/formularz.js"></script>-->
+    <script src="js/parallax.js"></script>
 </head>
 <body>
 <header class="naglowek-strony content">
     <div class="logo"></div>
-    <nav class="tytul">ZABYTKI GDAŃSKA</nav>
-    <nav class="menu">
+    <div class="tytul">ZABYTKI GDAŃSKA</div>
+    <div class="menu">
         <ul>
             <li><a href="#projekt">O Projekcie</a></li>
             <li><a href="#Stocznia">Zabytki</a></li>
             <li><a href="#Copyright">Kontakt</a></li>
         </ul>
-    </nav>
+    </div>
     <div class="clear"></div>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 1){
+                $('div.menu').addClass("sticky");
+            }
+            else{
+                $('div.menu').removeClass("sticky");
+            }
+        });
+    </script>
 
 </header>
 
 
-<main class="cel content_2">
+<main class="content_2">
 
     <div class="zajawka" id="projekt">
-        <div class="zajawka-tekst">Gdańsk jest miastem, które chcesz poznać!<br>
-            to początek twojej przygody...
+        <div class="zajawka-tekst">GDAŃSK JEST MIASTEM, KTÓRE CHCESZ POZNAĆ!<br>
+        TO POCZĄTEK TWOJEJ PRZYGODY...
         </div>
 
     </div>
 
-<!--<div class="tresc">-->
-<!--Dzięki naszej aplikacji zwiedzanie Gdańska</br> już nigdy nie będzie nudne.-->
-<!--</div>-->
-<!--</div>-->
 
 
 
@@ -58,7 +64,7 @@
             <h1>Intuicyjna wyszukiwarka</h1>
             <div class="tresc">
                 Nie musisz szukać w podstronach, aby
-                odnaleźć miejsca,<br> które wzbudzą Twoje zainteresowanie.
+                odnaleźć miejsca,<br> które wzbudzą Twoje zainteresowanie .
             </div>
         </div>
         <div class="funkcjonalnosc funkcjonalnosc-2">
@@ -71,7 +77,7 @@
         <div class="funkcjonalnosc funkcjonalnosc-3">
             <h1>Zabytki w jednym miejscu</h1>
             <div class="tresc">
-                Dzięki naszej aplikacji zwiedzanie Gdańska<br> już nigdy nie będzie nudne.
+                Dzięki naszej aplikacji zwiedzanie Gdańska</br> już nigdy nie będzie nudne.
             </div>
         </div>
 
@@ -115,17 +121,17 @@
                         class="naglowek">Gdański Dworzec</span><br>
                 Reprezentacyjny i przestronny Dworzec Główny został wybudowany w latach 1894-1900, w stylu tzw. "gdańskiego renesansu".
                 Projektantami kompleksu dworcowego byli Alexander Rundel, Paul Thomer i Georg Cuny.
-                <br>
+                </br>
                 </div>
             </div>
-            
+
             <div class="pudelko"><img src="images/kosciol.jpg" alt="mariacki">
 
                 <div class="teskt_opisu"><span class="cudzy_2">&#9679;</span><span
                         class="naglowek">Bazylika Mariacka</span> <br>
                     Bazylika Mariacka zwana "koroną miasta Gdańska" - Kościół Wniebowzięcia Najświętszej Marii Panny.
                     Największa ceglana, gotycka świątynia w Europie, powstawał 159 lat w kilku etapach w latach 1343-1502.
-                    <br>
+                    </br>
                 </div>
             </div>
             <div class="pudelko"><img src="images/neptun.jpg" alt="neptun">
@@ -138,7 +144,6 @@
                 </div>
             </div>
             <div class="clear"></div>
-
         </div>
 
 
@@ -146,35 +151,35 @@
         <div class="pudelko_ikon">
             <div class="ikony">
                 <img src="images/ikony/bitcoin-network.svg" alt="bitcoin">
-                <span class="naglowek_ik">Płatność w bitcoinach</span>
+                <span class="naglowek_ikon">Płatność w bitcoinach</span>
             </div>
             <div class="ikony">
                 <img src="images/ikony/camera-1.svg" alt="video">
-                <span class="naglowek_ik">Nagrywanie spacerów</span>
+                <span class="naglowek_ikon">Nagrywanie spacerów</span>
             </div>
             <div class="ikony">
                 <img src="images/ikony/bus-2.svg" alt="bus">
-                <span class="naglowek_ik">Zapewniamy transport</span>
+                <span class="naglowek_ikon">Zapewniamy transport</span>
             </div>
             <div class="ikony">
                 <img src="images/ikony/sign-elevator.svg" alt="winda">
-                <span class="naglowek_ik">Dostępne dla wszystkich</span>
+                <span class="naglowek_ikon">Dostępne dla wszystkich</span>
             </div>
             <div class="ikony">
                 <img src="images/ikony/calendar-1.svg" alt="kalendarz">
-                <span class="naglowek_ik">Dokładne planowanie</span>
+                <span class="naglowek_ikon">Dokładne planowanie</span>
             </div>
             <div class="ikony">
                 <img src="images/ikony/video-games-gameboy.svg" alt="android">
-                <span class="naglowek_ik">Wypożyczamy przewodniki</span>
+                <span class="naglowek_ikon">Wypożyczamy przewodniki</span>
             </div>
             <div class="ikony">
                 <img src="images/ikony/baby-trolley.svg" alt="baby">
-                <span class="naglowek_ik">Zapewniamy opiekę</span>
+                <span class="naglowek_ikon">Zapewniamy opiekę</span>
             </div>
             <div class="ikony">
                 <img src="images/ikony/leisure-marry-go-round.svg" alt="wypoczynek">
-                <span class="naglowek_ik">Przystanki z parasolami</span>
+                <span class="naglowek_ikon">Przystanki z parasolami</span>
             </div>
             <div class="clear"></div>
 
@@ -193,28 +198,28 @@
 
 <footer class="footer" id="Copyright">
     <form action="http://jfdz.infoshareaca.nazwa.pl/mailer.php" method="POST">
-        <div class="footer-text">Chcesz dowiedzieć się więcej? Wyślij do nas swój e-mail!</div>
-        <div class="mail"><input type="email" placeholder="Wpisz e-mail" name="myField" id="formularz"></div>
-        <div><input type="tel" placeholder="Wpisz telefon" name="myField" id="tel"></div>
-        <!-- kolejne pola -->
+        <div class="footer-text">Chcesz dowiedzieć się więcej? Wypełnij formularz, a my skontaktujemy się z Tobą!</div>
+        <div class="footer_kontener">
+            <div class="mail"><label>e-mail </label> <input type="email" placeholder="abc@example.com" required="" name="myField" id="formularz" ></div>
+            <div class="mail"><label>telefon</label> <input type="tel" maxlength="12" placeholder="999-999-999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required="" name="myField" id="tel"></div>
+            <div class="clear"></div>
+        </div>
         <input type="hidden"  name="receiver" value="hmd@wp.pl">
-
         <!--<input type="hidden"  name="receiver" value="niechcemaila@gmail.com">-->
 
-         <br/>
         <input id="submit" name="submit" value="Wyślij" onclick="return  ValidateFrom(document.forms[1 ])" type="submit">
-        <!--<input type="submit"  value="Wyślij">-->
+
     </form>
 
 
 
 
-    <span class="media"><a href="https://pl-pl.facebook.com/"><img src="images/facebook.svg"
+    <span class="media"><a href="https://www.facebook.com/gdansk/"><img src="images/facebook.svg"
                                                                   alt="śledż nas na Facebook'u"></a>
     </span>
-    <span class="media"><a href="https://twitter.com/?lang=pl"><img src="images/twitter.svg" alt="Twitter"></a>
+    <span class="media"><a href="https://twitter.com/gdansk"><img src="images/twitter.svg" alt="Twitter"></a>
     </span>
-    <span class="media"><a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="You Tube"></a>
+    <span class="media"><a href="https://www.youtube.com/watch?v=XvknNZURjSI"><img src="images/youtube.svg" alt="You Tube"></a>
     </span>
 
 

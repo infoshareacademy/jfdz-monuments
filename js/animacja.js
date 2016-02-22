@@ -3,18 +3,66 @@
  */
 
 
-function wplywanieElementow(){
-<<<<<<< HEAD
-//$('.zajawka-tekst').fadeIn(1000);
-=======
-$('.zajawka-tekst').fadeIn(1000);
+//function wplywanieElementow(){
+//$('.funkcjonalnosc').addClass("load");
+//
+//};
+//
+//
+////wywolanie funkcji przy uruchomieniu strony:
+//
+//$(document).ready(function () {
+//    wplywanieElementow();
+//});
 
->>>>>>> 2f3641a95d2d429b80bcb42a809ac7342298ca35
-};
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    //podaj aktualna pozycje skrola (gornej krawedzi)
 
 
-//wywolanie funkcji przy uruchomieniu strony:
+    $('.menu a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            console.log(currLink);
+            $('.menu li a ').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
 
-$(document).ready(function () {
-    wplywanieElementow();
-});
+    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        $('.menu li a ').removeClass("active");
+        $('.menu a[href="#Copyright"]').addClass('active');
+    }
+}
+
+$(document).on('scroll', onScroll);
+//funkcja reagująca na scroll strony i wywołanie funkcji onScroll
+
+    $(document).ready(function () {
+        $(document).on("scroll", onScroll);
+
+        //smoothscroll
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            $(document).off("scroll");
+
+            $('a').each(function () {
+                $(this).removeClass('active');
+            })
+            $(this).addClass('active');
+
+            var target = this.hash,
+                menu = target;
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top+2
+            }, 1000, 'swing', function () {
+                window.location.hash = target;
+                $(document).on("scroll", onScroll);
+            });
+        });
+    });

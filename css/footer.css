@@ -1,8 +1,8 @@
 footer {
     background-color: black;
     background-image: url("../images/back.jpg");
-    height: 270px;
     width: 1200px;
+    height: 280px;
     margin: auto;
     font-family: 'Exo 2', sans-serif;
     font-size: 16px;
@@ -21,8 +21,19 @@ footer .footer-text {
 
 }
 
+footer .footer_kontener {
+    margin: 0 auto;
+    width: 280px;
+
+}
+.clear{
+    clear: both;
+}
+
 footer .mail {
     padding: 5px;
+    float: right;
+
 }
 
 .media  {
@@ -78,12 +89,14 @@ input[type="submit"] {
 
 }
 
+
 input[type="email"]:invalid {
-    border: 2px solid red;
+    border: 2px solid ;
+
 }
 
 input[type="tel"]:invalid {
-    border: 2px solid red;
+    border: 2px solid ;
 }
 
 input[type="submit"]:hover {

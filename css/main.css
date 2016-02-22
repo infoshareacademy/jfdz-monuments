@@ -44,15 +44,39 @@ body {
     position: absolute;
 }
 
-.naglowek-strony .menu {
+.menu {
     font-family: 'Exo 2', sans-serif;
     font-weight: 100;
     font-size: 22px;
     color: RGBa(255, 255, 255, 0.8);
     padding: 10px;
-    position: absolute;
+    position: static;
     bottom: 53px;
     right: 50px;
+    float: right;
+    margin-top: 51px;
+    margin-right: 27px;
+}
+/*próby ze sticky menu*/
+
+.sticky {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    color: RGBa(255, 255, 255, 0.8);
+    padding: 18px;
+    height: 17px;
+    width: 342px;
+    left: 1143px;
+    top: -51px;
+    background-image: url("../images/back.jpg");
+    position: fixed;
+    z-index: 100000;
+    transition: all 0.4s ease;
+    margin-right: 0px;
+    right: 0px;
+    margin-top: 50px;
+
 }
 
 
@@ -71,6 +95,7 @@ body {
 .naglowek-strony .menu li{
     display: inline;
     padding: 10px;
+    padding-bottom: -37px;
     font-weight: 200;
     font-family: 'Exo 2', sans-serif;
 
@@ -85,15 +110,26 @@ body {
 
 }
 
+.active {
+    font-weight: 200;
+    font-family: 'Exo 2', sans-serif;
+    text-decoration: none;
+    line-height: 20px;
+    background-color: red;
+}
+
 /*opis zajawki*/
 .zajawka {
-    width: 1200px; height: 282px;
-    background-image: url("../images/Gdansk_zajawka.svg");
+    width: 1200px; height: 420px;
+    background: url("../images/Gdansk_zajawka.svg") no-repeat fixed;
     font-size: 20px;
     padding-top: 20px;
     color:white;
     text-align: center;
-
+    /*background-attachment: fixed;*/
+    background-position: center 122px;
+    /*background-repeat: ;*/
+    overflow: hidden;
 
 
 }
@@ -103,11 +139,35 @@ body {
     font-style: italic;
     font-size:24px;
     letter-spacing: 3px;
-    padding: 25px;
+    /*padding: 0px;*/
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
+    /*color: rgba(0,0,0,0.0);*/
+    color:white;
+    animation: fadein 4s;
+    -webkit-animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    animation: fadein 4s;
+
+
+ }
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
 }
-/*opis celu*/
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 
 .content_2 {
     width: 1200px;
@@ -170,7 +230,7 @@ body {
     transition: all 0.7s ease;
 }
 /*.pudelko:hover .teskt_opisu{*/
-/*-webkit-filter: grayscale(0%);*/
+    /*-webkit-filter: grayscale(0%);*/
 
 
 .pudelko:nth-child(2n) {
@@ -207,7 +267,7 @@ body {
     font-size: 20px;
 }
 
-.naglowek_ik {
+.naglowek_ikon {
     padding-top: 20px;
     /*top: 80px;*/
     left: auto;
@@ -222,7 +282,7 @@ body {
 }
 
 /*.pudelko_ikon .ikony img {*/
-/*position: absolute;*/
+    /*position: absolute;*/
 /*}*/
 
 .pudelko_ikon {
