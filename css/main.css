@@ -106,8 +106,8 @@ body {
     padding: 25px;
     margin-left: auto;
     margin-right: auto;
- }
-    /*opis celu*/
+}
+/*opis celu*/
 
 .content_2 {
     width: 1200px;
@@ -170,7 +170,7 @@ body {
     transition: all 0.7s ease;
 }
 /*.pudelko:hover .teskt_opisu{*/
-    /*-webkit-filter: grayscale(0%);*/
+/*-webkit-filter: grayscale(0%);*/
 
 
 .pudelko:nth-child(2n) {
@@ -222,7 +222,7 @@ body {
 }
 
 /*.pudelko_ikon .ikony img {*/
-    /*position: absolute;*/
+/*position: absolute;*/
 /*}*/
 
 .pudelko_ikon {
