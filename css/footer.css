@@ -16,14 +16,14 @@ footer {
 }
 
 footer .footer-text {
-    font-size: 16px;
-    padding: 12px;
+    font-size: 18px;
+    padding: 22px;
 
 }
 
 footer .footer_kontener {
     margin: 0 auto;
-    width: 300px;
+    width: 280px;
 
 }
 .clear{
@@ -89,8 +89,10 @@ input[type="submit"] {
 
 }
 
+
 input[type="email"]:invalid {
     border: 2px solid ;
+
 }
 
 input[type="tel"]:invalid {
