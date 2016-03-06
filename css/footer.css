@@ -2,7 +2,7 @@ footer {
     background-color: black;
     background-image: url("../images/back.jpg");
     width: 1200px;
-    height: 280px;
+    height: 290px;
     margin: auto;
     font-family: 'Exo 2', sans-serif;
     font-size: 16px;
@@ -15,15 +15,16 @@ footer {
     border-width: 2px;
 }
 
+
 footer .footer-text {
-    font-size: 16px;
-    padding: 12px;
+    font-size: 18px;
+    padding: 22px;
 
 }
 
 footer .footer_kontener {
     margin: 0 auto;
-    width: 300px;
+    width: 280px;
 
 }
 .clear{
@@ -89,8 +90,10 @@ input[type="submit"] {
 
 }
 
+
 input[type="email"]:invalid {
     border: 2px solid ;
+
 }
 
 input[type="tel"]:invalid {

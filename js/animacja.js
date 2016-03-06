@@ -32,6 +32,11 @@ function onScroll(event){
             currLink.removeClass("active");
         }
     });
+
+    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        $('.menu li a ').removeClass("active");
+        $('.menu a[href="#Copyright"]').addClass('active');
+    }
 }
 
 $(document).on('scroll', onScroll);

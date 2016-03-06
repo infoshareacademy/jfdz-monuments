@@ -15,10 +15,12 @@
           type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Exo+2:400,900italic,900,800italic,800,700,700italic,600italic,600,500italic,500,400italic,300italic,200italic,300,200,100italic,100'
           rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
     <title>Zabytki Gdańska</title>
     <link rel="shortcut icon" href="images/icon_2.png" type="image/x-icon"/>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/animacja.js"></script>
+    <script src="js/parallax.js"></script>
 </head>
 <body>
 <header class="naglowek-strony content">
@@ -36,6 +38,7 @@
         $(window).scroll(function() {
             if ($(this).scrollTop() > 1){
                 $('div.menu').addClass("sticky");
+                $('')
             }
             else{
                 $('div.menu').removeClass("sticky");
@@ -49,8 +52,8 @@
 <main class="content_2">
 
     <div class="zajawka" id="projekt">
-        <div class="zajawka-tekst">GDAŃSK JEST MIASTEM, KTÓRE CHCESZ POZNAĆ!<br>
-        TO POCZĄTEK TWOJEJ PRZYGODY...
+        <div class="zajawka-tekst">Gdańsk jest miastem, które chcesz poznać!<br>
+        To początek twojej przygody...
         </div>
 
     </div>
