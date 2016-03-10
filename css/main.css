@@ -328,3 +328,8 @@ body {
     letter-spacing: 3px;
     font-size: 10px;
 }
+
+.gra {
+    height: 500px;
+    background-color: antiquewhite;
+}

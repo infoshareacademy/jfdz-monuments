@@ -21,217 +21,219 @@
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/animacja.js"></script>
     <script src="js/parallax.js"></script>
+    <script src="js/naviagacja_gry.js"></script>
 </head>
 <body>
-<header class="naglowek-strony content">
-    <div class="logo"></div>
-    <div class="tytul">ZABYTKI GDAŃSKA</div>
-    <div class="menu">
-        <ul>
-            <li><a href="#projekt">O Projekcie</a></li>
-            <li><a href="#Stocznia">Zabytki</a></li>
-            <li><a href="#Copyright">Kontakt</a></li>
-        </ul>
-    </div>
-    <div class="clear"></div>
-    <script>
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 1){
-                $('div.menu').addClass("sticky");
-                $('')
-            }
-            else{
-                $('div.menu').removeClass("sticky");
-            }
-        });
-    </script>
+<!--<header class="naglowek-strony content">-->
+    <!--<div class="logo"></div>-->
+    <!--<div class="tytul">ZABYTKI GDAŃSKA</div>-->
+    <!--<div class="menu">-->
+        <!--<ul>-->
+            <!--<li><a href="#projekt">O Projekcie</a></li>-->
+            <!--<li><a href="#Stocznia">Zabytki</a></li>-->
+            <!--<li><a href="#Copyright">Kontakt</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+    <!--<div class="clear"></div>-->
+    <!--<script>-->
+        <!--$(window).scroll(function() {-->
+            <!--if ($(this).scrollTop() > 1){-->
+                <!--$('div.menu').addClass("sticky");-->
+                <!--$('')-->
+            <!--}-->
+            <!--else{-->
+                <!--$('div.menu').removeClass("sticky");-->
+            <!--}-->
+        <!--});-->
+    <!--</script>-->
 
-</header>
-
-
-<main class="content_2">
-
-    <div class="zajawka" id="projekt">
-        <div class="zajawka-tekst">Gdańsk jest miastem, które chcesz poznać!<br>
-        To początek twojej przygody...
-        </div>
-
-    </div>
+<!--</header>-->
 
 
+<!--<main class="content_2">-->
 
+    <!--<div class="zajawka" id="projekt">-->
+        <!--<div class="zajawka-tekst">Gdańsk jest miastem, które chcesz poznać!<br>-->
+        <!--To początek twojej przygody...-->
+        <!--</div>-->
 
-   <div class="funkcjonalnosci szerokosc">
-        <div class="funkcjonalnosc funkcjonalnosc-1">
-            <h1>Intuicyjna wyszukiwarka</h1>
-            <div class="tresc">
-                Nie musisz szukać w podstronach, aby
-                odnaleźć miejsca,<br> które wzbudzą Twoje zainteresowanie .
-            </div>
-        </div>
-        <div class="funkcjonalnosc funkcjonalnosc-2">
-            <h1>Minimum teorii</h1>
-            <div class="tresc">
-                Opisy zabytków na naszej stronie pozwolą Tobie<br>
-                zaoszczędzić czas poświęcony na przewodnika.
-            </div>
-        </div>
-        <div class="funkcjonalnosc funkcjonalnosc-3">
-            <h1>Zabytki w jednym miejscu</h1>
-            <div class="tresc">
-                Dzięki naszej aplikacji zwiedzanie Gdańska</br> już nigdy nie będzie nudne.
-            </div>
-        </div>
-
-        <div class="pudelko_glowne" id="Stocznia">
-            <div class="pudelko">
-
-                <img src="images/stocznia" alt="stocznia">
-
-                <div class="teskt_opisu"><span class="cudzy_2">&#9679;</span><span
-                        class="naglowek">Stocznia Gdańska</span> <br>
-                    Stocznia Gdańska zlokalizowana na lewym brzegu Martwej Wisły i na Ostrowiu. (od 2006 roku: Stocznia Gdańsk SA)
-                    – jedna z największych polskich stoczni, zlokalizowana w Gdańsku na lewym brzegu Martwej Wisły i na Ostrowiu.
-                    <br>
-                </div>
-
-            </div>
-            <div class="pudelko">
-
-                <img src="images/zuraw.jpg" alt="zuraw">
-
-                <div class="teskt_opisu"><span class="cudzy_2">&#9679;</span><span class="naglowek">Żuraw</span> <br>
-                    Żuraw - największy dźwig portowy średniowiecznej Europy, jedna z najbardziej charakterystycznych budowli Gdańska.
-                    Położony nad Motławą, służył do przeładunku towarów i stawiania masztów na statkach. Pełnił zarazem funkcję bramy miejskiej.
-                    Obecną formę uzyskał w latach 1442-1444.
-                    <br>
-                </div>
-            </div>
-            <div class="pudelko"><img src="images/dwor.jpg" alt="artus">
-
-                <div class="teskt_opisu"><span class="cudzy_2">&#9679;</span><span class="naglowek">Dwór Artusa</span>
-                    <br>
-                    Dwór Artusa - przez wiele lat był jednym z najwspanialszych tego typu obiektów w Europie północnej.
-                    Dwory Artusa powstawały licznie w całej Europie a szczególnie w miastach hanzeatyckich,
-                    jako miejsca spotkań zamożnego patrycjatu, kupców i rzemieślników.
-                    <br>
-                </div>
-            </div>
-            <div class="pudelko"><img src="images/dworzec" alt="dworzec">
-
-                <div class="teskt_opisu"><span class="cudzy_2">&#9679;</span><span
-                        class="naglowek">Gdański Dworzec</span><br>
-                Reprezentacyjny i przestronny Dworzec Główny został wybudowany w latach 1894-1900, w stylu tzw. "gdańskiego renesansu".
-                Projektantami kompleksu dworcowego byli Alexander Rundel, Paul Thomer i Georg Cuny.
-                </br>
-                </div>
-            </div>
-
-            <div class="pudelko"><img src="images/kosciol.jpg" alt="mariacki">
-
-                <div class="teskt_opisu"><span class="cudzy_2">&#9679;</span><span
-                        class="naglowek">Bazylika Mariacka</span> <br>
-                    Bazylika Mariacka zwana "koroną miasta Gdańska" - Kościół Wniebowzięcia Najświętszej Marii Panny.
-                    Największa ceglana, gotycka świątynia w Europie, powstawał 159 lat w kilku etapach w latach 1343-1502.
-                    </br>
-                </div>
-            </div>
-            <div class="pudelko"><img src="images/neptun.jpg" alt="neptun">
-
-                <div class="teskt_opisu"><span class="cudzy_2">&#9679;</span><span
-                        class="naglowek">Fontanna Neptuna</span> <br>
-                    Fontanna Neptuna - została zaprojektowana przez Abrahama van den Blocke.
-                    Podstawowym źródłem strumieni wodnych jest trójząb trzymany przez władcę mórz i oceanów w prawicy,
-                    znajdujące się u jego stóp konie morskie oraz krawędź postumentu.<br>
-                </div>
-            </div>
-            <div class="clear"></div>
-        </div>
-
-
-
-        <div class="pudelko_ikon">
-            <div class="ikony">
-                <img src="images/ikony/bitcoin-network.svg" alt="bitcoin">
-                <span class="naglowek_ikon">Płatność w bitcoinach</span>
-            </div>
-            <div class="ikony">
-                <img src="images/ikony/camera-1.svg" alt="video">
-                <span class="naglowek_ikon">Nagrywanie spacerów</span>
-            </div>
-            <div class="ikony">
-                <img src="images/ikony/bus-2.svg" alt="bus">
-                <span class="naglowek_ikon">Zapewniamy transport</span>
-            </div>
-            <div class="ikony">
-                <img src="images/ikony/sign-elevator.svg" alt="winda">
-                <span class="naglowek_ikon">Dostępne dla wszystkich</span>
-            </div>
-            <div class="ikony">
-                <img src="images/ikony/calendar-1.svg" alt="kalendarz">
-                <span class="naglowek_ikon">Dokładne planowanie</span>
-            </div>
-            <div class="ikony">
-                <img src="images/ikony/video-games-gameboy.svg" alt="android">
-                <span class="naglowek_ikon">Wypożyczamy przewodniki</span>
-            </div>
-            <div class="ikony">
-                <img src="images/ikony/baby-trolley.svg" alt="baby">
-                <span class="naglowek_ikon">Zapewniamy opiekę</span>
-            </div>
-            <div class="ikony">
-                <img src="images/ikony/leisure-marry-go-round.svg" alt="wypoczynek">
-                <span class="naglowek_ikon">Przystanki z parasolami</span>
-            </div>
-            <div class="clear"></div>
-
-        </div>
-
-
-
-    </div>
-</main>
+    <!--</div>-->
 
 
 
 
+   <!--<div class="funkcjonalnosci szerokosc">-->
+        <!--<div class="funkcjonalnosc funkcjonalnosc-1">-->
+            <!--<h1>Intuicyjna wyszukiwarka</h1>-->
+            <!--<div class="tresc">-->
+                <!--Nie musisz szukać w podstronach, aby-->
+                <!--odnaleźć miejsca,<br> które wzbudzą Twoje zainteresowanie .-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="funkcjonalnosc funkcjonalnosc-2">-->
+            <!--<h1>Minimum teorii</h1>-->
+            <!--<div class="tresc">-->
+                <!--Opisy zabytków na naszej stronie pozwolą Tobie<br>-->
+                <!--zaoszczędzić czas poświęcony na przewodnika.-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="funkcjonalnosc funkcjonalnosc-3">-->
+            <!--<h1>Zabytki w jednym miejscu</h1>-->
+            <!--<div class="tresc">-->
+                <!--Dzięki naszej aplikacji zwiedzanie Gdańska</br> już nigdy nie będzie nudne.-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="pudelko_glowne" id="Stocznia">-->
+            <!--<div class="pudelko">-->
+
+                <!--<img src="images/stocznia" alt="stocznia">-->
+
+                <!--<div class="teskt_opisu"><span class="cudzy_2">&#9679;</span><span-->
+                        <!--class="naglowek">Stocznia Gdańska</span> <br>-->
+                    <!--Stocznia Gdańska zlokalizowana na lewym brzegu Martwej Wisły i na Ostrowiu. (od 2006 roku: Stocznia Gdańsk SA)-->
+                    <!--– jedna z największych polskich stoczni, zlokalizowana w Gdańsku na lewym brzegu Martwej Wisły i na Ostrowiu.-->
+                    <!--<br>-->
+                <!--</div>-->
+
+            <!--</div>-->
+            <!--<div class="pudelko">-->
+
+                <!--<img src="images/zuraw.jpg" alt="zuraw">-->
+
+                <!--<div class="teskt_opisu"><span class="cudzy_2">&#9679;</span><span class="naglowek">Żuraw</span> <br>-->
+                    <!--Żuraw - największy dźwig portowy średniowiecznej Europy, jedna z najbardziej charakterystycznych budowli Gdańska.-->
+                    <!--Położony nad Motławą, służył do przeładunku towarów i stawiania masztów na statkach. Pełnił zarazem funkcję bramy miejskiej.-->
+                    <!--Obecną formę uzyskał w latach 1442-1444.-->
+                    <!--<br>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="pudelko"><img src="images/dwor.jpg" alt="artus">-->
+
+                <!--<div class="teskt_opisu"><span class="cudzy_2">&#9679;</span><span class="naglowek">Dwór Artusa</span>-->
+                    <!--<br>-->
+                    <!--Dwór Artusa - przez wiele lat był jednym z najwspanialszych tego typu obiektów w Europie północnej.-->
+                    <!--Dwory Artusa powstawały licznie w całej Europie a szczególnie w miastach hanzeatyckich,-->
+                    <!--jako miejsca spotkań zamożnego patrycjatu, kupców i rzemieślników.-->
+                    <!--<br>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="pudelko"><img src="images/dworzec" alt="dworzec">-->
+
+                <!--<div class="teskt_opisu"><span class="cudzy_2">&#9679;</span><span-->
+                        <!--class="naglowek">Gdański Dworzec</span><br>-->
+                <!--Reprezentacyjny i przestronny Dworzec Główny został wybudowany w latach 1894-1900, w stylu tzw. "gdańskiego renesansu".-->
+                <!--Projektantami kompleksu dworcowego byli Alexander Rundel, Paul Thomer i Georg Cuny.-->
+                <!--</br>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="pudelko"><img src="images/kosciol.jpg" alt="mariacki">-->
+
+                <!--<div class="teskt_opisu"><span class="cudzy_2">&#9679;</span><span-->
+                        <!--class="naglowek">Bazylika Mariacka</span> <br>-->
+                    <!--Bazylika Mariacka zwana "koroną miasta Gdańska" - Kościół Wniebowzięcia Najświętszej Marii Panny.-->
+                    <!--Największa ceglana, gotycka świątynia w Europie, powstawał 159 lat w kilku etapach w latach 1343-1502.-->
+                    <!--</br>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="pudelko"><img src="images/neptun.jpg" alt="neptun">-->
+
+                <!--<div class="teskt_opisu"><span class="cudzy_2">&#9679;</span><span-->
+                        <!--class="naglowek">Fontanna Neptuna</span> <br>-->
+                    <!--Fontanna Neptuna - została zaprojektowana przez Abrahama van den Blocke.-->
+                    <!--Podstawowym źródłem strumieni wodnych jest trójząb trzymany przez władcę mórz i oceanów w prawicy,-->
+                    <!--znajdujące się u jego stóp konie morskie oraz krawędź postumentu.<br>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="clear"></div>-->
+        <!--</div>-->
 
 
-<footer class="footer" id="Copyright">
-    <form action="http://jfdz.infoshareaca.nazwa.pl/mailer.php" method="POST">
-        <div class="footer-text">Chcesz dowiedzieć się więcej? Wypełnij formularz, a my skontaktujemy się z Tobą!</div>
-        <div class="footer_kontener">
-            <div class="mail"><label>e-mail </label> <input type="email" placeholder="abc@example.com" required="" name="myField" id="formularz" ></div>
-            <div class="mail"><label>telefon</label> <input type="tel" maxlength="12" placeholder="999-999-999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required="" name="myField" id="tel"></div>
-            <div class="clear"></div>
-        </div>
-        <input type="hidden"  name="receiver" value="hmd@wp.pl">
-        <!--<input type="hidden"  name="receiver" value="niechcemaila@gmail.com">-->
 
-        <input id="submit" name="submit" value="Wyślij" onclick="return  ValidateFrom(document.forms[1 ])" type="submit">
+        <!--<div class="pudelko_ikon">-->
+            <!--<div class="ikony">-->
+                <!--<img src="images/ikony/bitcoin-network.svg" alt="bitcoin">-->
+                <!--<span class="naglowek_ikon">Płatność w bitcoinach</span>-->
+            <!--</div>-->
+            <!--<div class="ikony">-->
+                <!--<img src="images/ikony/camera-1.svg" alt="video">-->
+                <!--<span class="naglowek_ikon">Nagrywanie spacerów</span>-->
+            <!--</div>-->
+            <!--<div class="ikony">-->
+                <!--<img src="images/ikony/bus-2.svg" alt="bus">-->
+                <!--<span class="naglowek_ikon">Zapewniamy transport</span>-->
+            <!--</div>-->
+            <!--<div class="ikony">-->
+                <!--<img src="images/ikony/sign-elevator.svg" alt="winda">-->
+                <!--<span class="naglowek_ikon">Dostępne dla wszystkich</span>-->
+            <!--</div>-->
+            <!--<div class="ikony">-->
+                <!--<img src="images/ikony/calendar-1.svg" alt="kalendarz">-->
+                <!--<span class="naglowek_ikon">Dokładne planowanie</span>-->
+            <!--</div>-->
+            <!--<div class="ikony">-->
+                <!--<img src="images/ikony/video-games-gameboy.svg" alt="android">-->
+                <!--<span class="naglowek_ikon">Wypożyczamy przewodniki</span>-->
+            <!--</div>-->
+            <!--<div class="ikony">-->
+                <!--<img src="images/ikony/baby-trolley.svg" alt="baby">-->
+                <!--<span class="naglowek_ikon">Zapewniamy opiekę</span>-->
+            <!--</div>-->
+            <!--<div class="ikony">-->
+                <!--<img src="images/ikony/leisure-marry-go-round.svg" alt="wypoczynek">-->
+                <!--<span class="naglowek_ikon">Przystanki z parasolami</span>-->
+            <!--</div>-->
+            <!--<div class="clear"></div>-->
 
-    </form>
+        <!--</div>-->
+
+
+
+    <!--</div>-->
+<!--</main>-->
 
 
 
 
-    <span class="media"><a href="https://www.facebook.com/gdansk/"><img src="images/facebook.svg"
-                                                                  alt="śledż nas na Facebook'u"></a>
-    </span>
-    <span class="media"><a href="https://twitter.com/gdansk"><img src="images/twitter.svg" alt="Twitter"></a>
-    </span>
-    <span class="media"><a href="https://www.youtube.com/watch?v=XvknNZURjSI"><img src="images/youtube.svg" alt="You Tube"></a>
-    </span>
 
 
-    <br>
+<!--<footer class="footer" id="Copyright">-->
+    <!--<form action="http://jfdz.infoshareaca.nazwa.pl/mailer.php" method="POST">-->
+        <!--<div class="footer-text">Chcesz dowiedzieć się więcej? Wypełnij formularz, a my skontaktujemy się z Tobą!</div>-->
+        <!--<div class="footer_kontener">-->
+            <!--<div class="mail"><label>e-mail </label> <input type="email" placeholder="abc@example.com" required="" name="myField" id="formularz" ></div>-->
+            <!--<div class="mail"><label>telefon</label> <input type="tel" maxlength="12" placeholder="999-999-999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required="" name="myField" id="tel"></div>-->
+            <!--<div class="clear"></div>-->
+        <!--</div>-->
+        <!--<input type="hidden"  name="receiver" value="hmd@wp.pl">-->
+        <!--&lt;!&ndash;<input type="hidden"  name="receiver" value="niechcemaila@gmail.com">&ndash;&gt;-->
 
-        <span>Copyright&copy 2015 TeamLoża</span>
-        <div class="clear"></div>
+        <!--<input id="submit" name="submit" value="Wyślij" onclick="return  ValidateFrom(document.forms[1 ])" type="submit">-->
+
+    <!--</form>-->
 
 
-</footer>
-<script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
-<script src="scripts/cookies.js" ></script>
+
+
+    <!--<span class="media"><a href="https://www.facebook.com/gdansk/"><img src="images/facebook.svg"-->
+                                                                  <!--alt="śledż nas na Facebook'u"></a>-->
+    <!--</span>-->
+    <!--<span class="media"><a href="https://twitter.com/gdansk"><img src="images/twitter.svg" alt="Twitter"></a>-->
+    <!--</span>-->
+    <!--<span class="media"><a href="https://www.youtube.com/watch?v=XvknNZURjSI"><img src="images/youtube.svg" alt="You Tube"></a>-->
+    <!--</span>-->
+
+
+    <!--<br>-->
+
+        <!--<span>Copyright&copy 2015 TeamLoża</span>-->
+        <!--<div class="clear"></div>-->
+
+
+<!--</footer>-->
+<!--<script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>-->
+<!--<script src="scripts/cookies.js" ></script>-->
+<div class="gra">TU POWSTAJE GRA:</div>
 </body>
 </html>
