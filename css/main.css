@@ -333,3 +333,8 @@ body {
     height: 500px;
     /*background-color: antiquewhite;*/
 }
+
+.pole  {
+    background-color: red;
+    color: white;
+}
