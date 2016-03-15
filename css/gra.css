@@ -3,6 +3,11 @@
     color: white;
 }
 
+.niebieski  {
+    background-color: blue;
+    color: white;
+}
+
 td {
     width: 50px;
     height: 50px;

@@ -31,8 +31,9 @@ $game.append(CreateTable(8, 8));
 
 //2. interaktywność komórek w tabeli na click
 var firstCell = $('td').first();
+var firstRow = $('tr').first();
 
-function makeInteractive() {
+function interactiveMouse() {
     $table.on('click', 'td', function () {
         $(this).addClass('czerwony');
         firstCell.addClass('czerwony');
@@ -40,8 +41,9 @@ function makeInteractive() {
         $playerScore.html("+1");
         //wywolaj funkcje ktora doda 1km do tablicy playerScore
         //wywolaj funkcje ktora odejmie 1km od tablicy distance
-    });}
-makeInteractive();
+    });
+}
+interactiveMouse();
 
 //3. interaktywność dla ruchów klawiatury
 function interactiveKeyboard() {
@@ -49,11 +51,12 @@ function interactiveKeyboard() {
         if (e.keyCode == 39) {
             firstCell = firstCell.next();
             firstCell.addClass('czerwony');
+        }
+        else if (e.keyCode == 40) {
+            firstRow = firstRow.next();
+            firstRow.addClass('czerwony');
 
         }
-        //if (e.keyCode == 40) {
-        //    firstCell.next('tr').addClass('czerwony');
-        //}
     });
 }
 
