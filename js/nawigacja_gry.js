@@ -44,18 +44,20 @@ function makeInteractive() {
 makeInteractive();
 
 //3. interaktywność dla ruchów klawiatury
-$(document).on('keydown', function (e) {
-    if (e.keyCode == 39) {
-    firstCell = firstCell.next();
-    firstCell.addClass('czerwony');
+function interactiveKeyboard() {
+    $(document).on('keydown', function (e) {
+        if (e.keyCode == 39) {
+            firstCell = firstCell.next();
+            firstCell.addClass('czerwony');
 
-    }
-    //if (e.keyCode == 40) {
-    //    firstCell.next('tr').addClass('czerwony');
-    //}
-});
+        }
+        //if (e.keyCode == 40) {
+        //    firstCell.next('tr').addClass('czerwony');
+        //}
+    });
+}
 
-
+interactiveKeyboard();
 //$(document).on('keydown', function (e)  {
 //    if (e.keyCode ==37 || e.which ==38 || e.which ==39 || e.which ==40)
 //    {
