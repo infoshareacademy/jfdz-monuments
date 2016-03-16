@@ -1,0 +1,8 @@
+table, tr, td {
+    height: 20px;
+    width: 200px;
+}
+
+.selected {
+    background-color: aqua;
+}
