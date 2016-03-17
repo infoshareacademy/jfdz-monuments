@@ -1,4 +1,4 @@
-.czerwony  {
+.pointedField  {
     background-color: red;
     color: white;
 }
@@ -14,6 +14,16 @@
     margin-top: 10px;
     font-weight: 900;
     font-size: 20px;
+}
+
+
+#distanceBoard {
+    color: darkgreen;
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: 20px;
+    /*border: 1px solid black;*/
+    /*width: 350px;*/
 }
 td {
     width: 50px;

@@ -9,6 +9,10 @@ var $playerScore =$('#playerScore');
 var $score = 0;
 $playerScore.text('TWÓJ WYNIK TO:' + ' ' + $score + ' ' + 'pkt');
 
+var $distanceBoard = $('#distanceBoard');
+var $distance =30;
+$distanceBoard.text('ZOSTAŁO:' + ' ' + $distance + ' ' + 'km');
+
 //1. tworzenie planszy do gry z zaznaczeiem komorki startowej:
 function CreateTable(height, width) {
     $table = $('<table>');
@@ -17,7 +21,7 @@ function CreateTable(height, width) {
         for (x = 0; x < width; x++) {
             $cell = $('<td>');
             if (y == 0 && x == 0) {
-                $cell.addClass('czerwony');
+                $cell.addClass('pointedField');
                 $cell.html('Ruszaj!');
             }
             ;
@@ -38,11 +42,12 @@ var nextCell = $('tr :nth-child(1)');
 
 function interactiveMouse() {
     $table.on('click', 'td', function () {
-        $(this).addClass('czerwony');
-        firstCell.addClass('czerwony');
+        $(this).addClass('pointedField');
+        firstCell.addClass('pointedField');
         $score +=1;
         $playerScore.text('TWÓJ WYNIK TO:' + ' ' + $score + ' ' + 'pkt');
-        //wywolaj funkcje ktora doda 1km do tablicy playerScore
+        $distance -=1;
+        $distanceBoard.text('ZOSTAŁO :' + ' ' + $distance + ' ' + 'km');
         //wywolaj funkcje ktora odejmie 1km od tablicy distance
     });
 }
@@ -53,11 +58,11 @@ function interactiveKeyboard() {
     $(document).on('keydown', function (e) {
         if (e.keyCode == 39) {
             firstCell = firstCell.next();
-            firstCell.addClass('czerwony');
+            firstCell.addClass('pointedField');
         }
         else if (e.keyCode == 40) {
             firstRow = firstRow.next();
-            firstRow.addClass('czerwony');
+            firstRow.addClass('pointedField');
 
         }
     });
