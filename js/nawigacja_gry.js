@@ -5,7 +5,9 @@ var $game = $('#game');
 var $table;
 var $row;
 var $cell;
-var $playerScore;
+var $playerScore =$('#playerScore');
+var $score = 0;
+$playerScore.text('TWÓJ WYNIK TO:' + ' ' + $score + ' ' + 'pkt');
 
 //1. tworzenie planszy do gry z zaznaczeiem komorki startowej:
 function CreateTable(height, width) {
@@ -32,13 +34,14 @@ $game.append(CreateTable(8, 8));
 //2. interaktywność komórek w tabeli na click
 var firstCell = $('td').first();
 var firstRow = $('tr').first();
+var nextCell = $('tr :nth-child(1)');
 
 function interactiveMouse() {
     $table.on('click', 'td', function () {
         $(this).addClass('czerwony');
         firstCell.addClass('czerwony');
-        $playerScore = $('#playerScore');
-        $playerScore.html("+1");
+        $score +=1;
+        $playerScore.text('TWÓJ WYNIK TO:' + ' ' + $score + ' ' + 'pkt');
         //wywolaj funkcje ktora doda 1km do tablicy playerScore
         //wywolaj funkcje ktora odejmie 1km od tablicy distance
     });
