@@ -10,5 +10,8 @@ function rand(min, max) {
 function choise() {
     for (var i = 0; i < 5; i++) {
         $('table, td').eq(rand(1, 64)).addClass('selected');
+        if ($('#50').hasClass("selected")) {
+            confirm('Masz dodatkowe punkty,albo coś');
+        }
     }
 }
