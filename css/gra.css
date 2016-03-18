@@ -1,8 +1,9 @@
 table, tr, td {
+    margin-left: auto;
+    margin-right: auto;
     height: 50px;
     width: 400px;
-    background-color: white;
-}
+background-image: url("../images/game_icon/gdansk.svg")}
 
 .selected {
     background-color: white;
