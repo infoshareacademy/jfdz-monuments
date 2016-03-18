@@ -1,8 +1,14 @@
 table, tr, td {
     height: 20px;
     width: 200px;
+    background-color: black;
 }
 
 .selected {
-    background-color: aqua;
+    background-color: white;
+}
+
+#targetImage{
+    position: inherit;
+    float: left;
 }
