@@ -9,7 +9,8 @@ function rand(min, max) {
 }
 function choise() {
     for (var i = 0; i < 5; i++) {
-        $('table, td').eq(rand(1, 64)).addClass('selected');
+        var icon = $('table, td').eq(rand(1, 64)).addClass('selected');
+        icon.append(url/images/game_icon/kaplica_krolewska_icon.svg);
         if ($('#50').hasClass("selected")) {
             confirm('Masz dodatkowe punkty,albo coś');
         }
