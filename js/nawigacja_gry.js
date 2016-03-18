@@ -5,13 +5,8 @@ var $game = $('#game');
 var $table;
 var $row;
 var $cell;
-var $playerScore =$('#playerScore');
-var $score = 0;
-$playerScore.text('TWÓJ WYNIK TO:' + ' ' + $score + ' ' + 'pkt');
 
-var $distanceBoard = $('#distanceBoard');
-var $distance =30;
-$distanceBoard.text('ZOSTAŁO:' + ' ' + $distance + ' ' + 'km');
+var board = [];
 
 //1. tworzenie planszy do gry z zaznaczeiem komorki startowej:
 function CreateTable(height, width) {
@@ -20,11 +15,10 @@ function CreateTable(height, width) {
         $row = $('<tr>');
         for (x = 0; x < width; x++) {
             $cell = $('<td>');
-            if (y == 0 && x == 0) {
-                $cell.addClass('pointedField');
-                $cell.html('Ruszaj!');
-            }
-            ;
+            //if (y == 0 && x == 0) {
+            //    $cell.addClass('selectedCell');
+            //    $cell.html('Ruszaj!');
+            //};
             $row.append($cell);
         }
 
@@ -35,15 +29,43 @@ function CreateTable(height, width) {
 
 $game.append(CreateTable(8, 8));
 
+// podczepienie tablicy ze współrzędnymi pod planszę
+
+function initiateCells (size) {
+board = new Array(size);
+        for (var x = 0; x < size; x++) {
+            board[x] = [];
+            for (var y = 0; y < size; y++) {
+                board[x][y] = {};
+            }
+        }
+        //
+        //board[3][4] = { player: 1 };
+        //board[2][4] = { player: 2 };
+        //board[3][1] = { player: 1 };
+    };
+
+initiateCells(8);
+
 //2. interaktywność komórek w tabeli na click
+var $selectedCell = {
+    row_index: 0,
+    col_index: 0
+};
+
+function getIndex(){
+
+}
 var firstCell = $('td').first();
+var selectedField = $('td').hasClass('selectedCell');
 var firstRow = $('tr').first();
 var nextCell = $('tr :nth-child(1)');
 
+
 function interactiveMouse() {
     $table.on('click', 'td', function () {
-        $(this).addClass('pointedField');
-        firstCell.addClass('pointedField');
+        $(this).addClass('selectedCell');
+        //firstCell.addClass('selectedCell');
         $score +=1;
         $playerScore.text('TWÓJ WYNIK TO:' + ' ' + $score + ' ' + 'pkt');
         $distance -=1;
@@ -58,11 +80,11 @@ function interactiveKeyboard() {
     $(document).on('keydown', function (e) {
         if (e.keyCode == 39) {
             firstCell = firstCell.next();
-            firstCell.addClass('pointedField');
+            firstCell.addClass('selectedCell');
         }
         else if (e.keyCode == 40) {
             firstRow = firstRow.next();
-            firstRow.addClass('pointedField');
+            firstRow.addClass('selectedCell');
 
         }
     });
