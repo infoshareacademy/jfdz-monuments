@@ -117,6 +117,7 @@ body {
     text-decoration: none;
     line-height: 20px;
     background-color: rgb(105, 4, 4);
+    border-radius: 7px;
 }
 
 /*opis zajawki*/
