@@ -1,7 +1,7 @@
 table, tr, td {
-    height: 20px;
-    width: 200px;
-    background-color: black;
+    height: 50px;
+    width: 400px;
+    background-color: white;
 }
 
 .selected {

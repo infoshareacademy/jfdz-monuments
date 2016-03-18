@@ -9,12 +9,12 @@ function rand(min, max) {
 }
 function choise() {
     for (var i = 0; i < 5; i++) {
-        var icon = $('table, td').eq(rand(1, 64)).addClass('selected');
-        icon.append(targetImage_1);
-        icon.append(targetImage_2);
-        icon.append(targetImage_3);
-        icon.append(targetImage_4);
-        icon.append(targetImage_5);
+        var icon = $('table, td').eq(rand(1, 64));
+        $('table td').eq(rand(1, 64)).append(targetImage_1);
+        $('table td').eq(rand(1, 64)).append(targetImage_2);
+        $('table td').eq(rand(1, 64)).append(targetImage_3);
+        $('table td').eq(rand(1, 64)).append(targetImage_4);
+        $('table td').eq(rand(1, 64)).append(targetImage_5);
         if ($('#50').hasClass("selected")) {
             confirm('Masz dodatkowe punkty,albo coś');
         }
