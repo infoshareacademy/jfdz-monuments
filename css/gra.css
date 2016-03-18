@@ -2,8 +2,10 @@ table, tr, td {
     margin-left: auto;
     margin-right: auto;
     height: 50px;
-    width: 400px;
-background-image: url("../images/game_icon/gdansk.svg")}
+    width: 500px;
+background-image: url("../images/game_icon/gdansk.svg");
+    background-repeat: no-repeat;
+}
 
 .selected {
     background-color: white;
