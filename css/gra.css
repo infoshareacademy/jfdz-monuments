@@ -4,9 +4,9 @@ table#mapa {
     background-image: url("../images/game_icon/gdansk.svg");
     background-repeat: no-repeat;
     background-color: RGBa(255, 255, 255, 0.8);
-    background-size: 195%;
-    background-position-x: -300px;
-    background-position-y: -530px;
+    background-size: 180%;
+    background-position-x: -250px;
+    background-position-y: -500px;
 
 }
 
