@@ -32,7 +32,7 @@ td {
 }
 
 
-table#mapa {
+table{
     margin-left: auto;
     margin-right: auto;
     background-image: url("../images/game_icon/gdansk.svg");
@@ -42,7 +42,7 @@ table#mapa {
     background-position-x: -250px;
     background-position-y: -500px;
 }
-table#mapa tr td {
+table tr td {
     height: 60px;
     width: 60px;
 }
