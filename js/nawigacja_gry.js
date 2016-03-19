@@ -15,9 +15,10 @@ function CreateTable(height, width) {
         for (x = 0; x < width; x++) {
             $cell = $('<td>');
             if (y == 0 && x == 0) {
-                //$cell.addClass('selectedCell');
-                //$cell.html('Ruszaj!');
-            };
+                $cell.addClass('selectedCell');
+                $cell.html('Ruszaj!');
+            }
+            ;
             $row.append($cell);
         }
 
@@ -30,21 +31,20 @@ $game.append(CreateTable(8, 8));
 
 //2. podczepienie tablicy ze współrzędnymi pod planszę
 
-function initiateCells(size) {
-    board = new Array(size);
-    for (var x = 0; x < size; x++) {
-        board[x] = [];
-        for (var y = 0; y < size; y++) {
-            board[x][y] = {};
-        }
-    }
-    //
-    //board[3][4] = { player: 1 };
-    //board[2][4] = { player: 2 };
-    //board[3][1] = { player: 1 };
-};
-
-initiateCells(8);
+//function initiateCells(size) {
+//    board = new Array(size);
+//    for (var x = 0; x < size; x++) {
+//        board[x] = [];
+//        for (var y = 0; y < size; y++) {
+//            board[x][y] = {};
+//        }
+//    }
+//    //
+//    //board[3][4] = { player: 1 };
+//
+//}
+//
+//initiateCells(8);
 
 //2. funkcja pobierająca wartości indexu/współrzędne dla kliniętej komórki
 var $selectedCell = {
@@ -61,14 +61,13 @@ function getIndexClick() {
 getIndexClick();
 
 function getIndexKeydown() {
-        $selectedCell.row_index = $(this).fist().parent().index();
-        $selectedCell.col_index = $(this).first().index();
-};
+    $selectedCell.row_index = $(this).first().parent().index();
+    $selectedCell.col_index = $(this).first().index();
+}
+//getIndexKeydown.call(firstCell);
 
-var firstCell = $('td').first();
-var selectedField = $('td').hasClass('selectedCell');
-var firstRow = $('tr').first();
-var nextCell = $('tr :nth-child(1)');
+var currentCell = $('td').first();
+var currrentRow = $('tr').first();
 
 
 function interactiveMouse() {
@@ -84,26 +83,72 @@ function interactiveMouse() {
 }
 interactiveMouse();
 
-var rightMove = {
-    x: $selectedCell.col_index + 1,
-    y: $selectedCell.row_index };
-
 
 //getIndexKeydown();
-var currentPosition;
 
-//3. interaktywność dla ruchów klawiatury jesli nacisniesz strzalke w prawo to wykonaj ruch x =x+1 a y =y
+//3. interaktywność dla ruchów klawiatury jesli nacisniesz strzalke to wykonaj ruch chyba ze dane miejsce ma juz klase selectedCell
+
+//funkcja aktualizaujaca tablice z wynikami
+function showScore() {
+    $score += 1;
+    $playerScore.text('TWÓJ WYNIK TO:' + ' ' + $score + ' ' + 'pkt');
+    $distance -= 1;
+    $distanceBoard.text('ZOSTAŁO :' + ' ' + $distance + ' ' + 'km');
+// spr czy wartosc po lewej stronie == wartosc po prawej stronie
+    if ($distance == 0) {
+        $(document).off('keydown');
+        alert('GAME OVER!');
+    }
+}
+
 function interactiveKeyboard() {
     $(document).on('keydown', function (e) {
-        if (e.keyCode == 39) {
-            firstCell = firstCell.next();
-            firstCell.addClass('selectedCell');
+        if (e.keyCode == 39)  // right
+        {
+            var currentCellTmp = currentCell.next();
+            if (currentCellTmp.length === 1 && !currentCellTmp.hasClass('selectedCell')) {
+                currentCell = currentCellTmp;
+                currentCell.addClass('selectedCell');
+                showScore();
+            }
         }
-        else if (e.keyCode == 40) {
-            firstRow = firstRow.next();
-            firstRow.addClass('selectedCell');
 
+        else if (e.keyCode == 40) // down
+        {
+            var currentCellTmp = currentCell.parent().next().find(':eq(' + currentCell.index() + ')');
+            if (currentCellTmp.length === 1 && !currentCellTmp.hasClass('selectedCell')) {
+                currentCell = currentCellTmp;
+                currentCell.addClass('selectedCell');
+                showScore();
+            }
         }
+
+        else if (e.keyCode == 37) //left
+        {
+            var currentCellTmp = currentCell.prev();
+            if (currentCellTmp.length === 1 && !currentCellTmp.hasClass('selectedCell')) {
+                currentCell = currentCellTmp;
+                currentCell.addClass('selectedCell');
+                showScore();
+            }
+        }
+
+        else if (e.keyCode == 38)    //up
+        {
+            var currentCellTmp = currentCell.parent().prev().find(':eq(' + currentCell.index() + ')');
+            if (currentCellTmp.length === 1 && !currentCellTmp.hasClass('selectedCell')) {
+                currentCell = currentCellTmp;
+                currentCell.addClass('selectedCell');
+                showScore();
+            }
+        }
+        console.log(currentCellTmp);
+        //$score += 1;
+        //$playerScore.text('TWÓJ WYNIK TO:' + ' ' + $score + ' ' + 'pkt');
+        //$distance -= 1;
+        //$distanceBoard.text('ZOSTAŁO :' + ' ' + $distance + ' ' + 'km');
+
+
     });
 }
 
