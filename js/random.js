@@ -22,21 +22,8 @@ function choise() {
             }
         }
 
-
-        //
-        //
-        //$('table td').eq(rand(1, 64)).append(targetImage_1);
-        //$('table td').eq(rand(1, 64)).append(targetImage_2);
-        //$('table td').eq(rand(1, 64)).append(targetImage_3);
-        //$('table td').eq(rand(1, 64)).append(targetImage_4);
-        //$('table td').eq(rand(1, 64)).append(targetImage_5);
-
-
-
         //if ($('#50').hasClass("selected")) {
         //    confirm('Masz dodatkowe punkty,albo coś');
-            //while( var randTd = rand(1,64) && $('table td').eq( randTd ).hasClass(targetImage) ){ }
-        //}
     }
 }
 
