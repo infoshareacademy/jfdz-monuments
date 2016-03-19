@@ -213,7 +213,14 @@
     </form>
     <br>
     <div class="nadmapie">Jesteśmy tu!</div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3288.5636560472367!2d18.647894945415633!3d54.35051916669775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1458329408576" width="500" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:350px;width:500px;display: inline-block;'>
+    <div id='gmap_canvas' style='height:350px;width:500px;'></div>
+    <style>
+        #gmap_canvas img{max-width:none!important;background:none!important}
+    </style>
+    </div>
+    <script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(54.3496712,18.646688499999982),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(54.3496712,18.646688499999982)});infowindow = new google.maps.InfoWindow({content:'<strong>LOZA</strong><br>Gdansk, Targ Weglowy 1<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
     <div class="clear"></div>
     <span class="media"><a href="https://www.facebook.com/gdansk/"><img src="images/facebook.svg"
                                                                   alt="śledż nas na Facebook'u"></a>
@@ -226,7 +233,7 @@
 
     <br>
 
-        <span>Copyright&copy 2015 TeamLoża</span>
+        <span>Copyright<a href="#easter" style="text-decoration: none; color: #a27854">&copy</a> 2015 TeamLoża</span>
         <div class="clear"></div>
 
 

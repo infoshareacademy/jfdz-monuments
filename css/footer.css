@@ -115,4 +115,11 @@ input[type="submit"]:hover {
     position: relative; top: 6px;
     display: inline-block;
 }
+/*easter pop up*/
+/*#easter {*/
+    /*display: none;*/
+    /*height: 400px;*/
+    /*width: 400px;*/
+    /*background-color: aqua;*/
+/*}*/
 
