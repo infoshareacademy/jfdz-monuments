@@ -30,3 +30,26 @@ td {
     height: 50px;
     border: 1px solid;
 }
+
+
+table#mapa {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/game_icon/gdansk.svg");
+    background-repeat: no-repeat;
+    background-color: RGBa(255, 255, 255, 0.8);
+    background-size: 180%;
+    background-position-x: -250px;
+    background-position-y: -500px;
+}
+table#mapa tr td {
+    height: 60px;
+    width: 60px;
+}
+.selected {
+    background-color: white;
+}
+#targetImage{
+    position: inherit;
+    float: left;
+}
