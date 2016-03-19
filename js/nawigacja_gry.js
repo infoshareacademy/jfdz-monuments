@@ -5,7 +5,6 @@ var $game = $('#game');
 var $table;
 var $row;
 var $cell;
-
 var board = [];
 
 //1. tworzenie planszy do gry z zaznaczeiem komorki startowej:
@@ -15,10 +14,10 @@ function CreateTable(height, width) {
         $row = $('<tr>');
         for (x = 0; x < width; x++) {
             $cell = $('<td>');
-            //if (y == 0 && x == 0) {
-            //    $cell.addClass('selectedCell');
-            //    $cell.html('Ruszaj!');
-            //};
+            if (y == 0 && x == 0) {
+                //$cell.addClass('selectedCell');
+                //$cell.html('Ruszaj!');
+            };
             $row.append($cell);
         }
 
@@ -29,33 +28,48 @@ function CreateTable(height, width) {
 
 $game.append(CreateTable(8, 8));
 
-// podczepienie tablicy ze współrzędnymi pod planszę
+//2. podczepienie tablicy ze współrzędnymi pod planszę
 
-function initiateCells (size) {
-board = new Array(size);
-        for (var x = 0; x < size; x++) {
-            board[x] = [];
-            for (var y = 0; y < size; y++) {
-                board[x][y] = {};
-            }
+function initiateCells(size) {
+    board = new Array(size);
+    for (var x = 0; x < size; x++) {
+        board[x] = [];
+        for (var y = 0; y < size; y++) {
+            board[x][y] = {};
         }
-        //
-        //board[3][4] = { player: 1 };
-        //board[2][4] = { player: 2 };
-        //board[3][1] = { player: 1 };
-    };
+    }
+    //
+    //board[3][4] = { player: 1 };
+    //board[2][4] = { player: 2 };
+    //board[3][1] = { player: 1 };
+};
 
 initiateCells(8);
 
-//2. interaktywność komórek w tabeli na click
+//2. funkcja pobierająca wartości indexu/współrzędne dla kliniętej komórki
 var $selectedCell = {
     row_index: 0,
     col_index: 0
 };
 
-function getIndex(){
-
+function getIndexClick() {
+    $table.on('click', 'td', function () {
+        $selectedCell.row_index = $(this).parent().index();
+        $selectedCell.col_index = $(this).index();
+    });
 }
+getIndexClick();
+
+//function getIndexKeydown() {
+//    $(document).on('keydown', function (e) {
+//        if (e.keyCode == 39)    {
+//            e.preventDefault();
+//        $selectedCell.row_index = $(this).parent().index();
+//        $selectedCell.col_index = $(this).index();
+//        }
+//    });
+//}
+
 var firstCell = $('td').first();
 var selectedField = $('td').hasClass('selectedCell');
 var firstRow = $('tr').first();
@@ -66,20 +80,32 @@ function interactiveMouse() {
     $table.on('click', 'td', function () {
         $(this).addClass('selectedCell');
         //firstCell.addClass('selectedCell');
-        $score +=1;
+        $score += 1;
         $playerScore.text('TWÓJ WYNIK TO:' + ' ' + $score + ' ' + 'pkt');
-        $distance -=1;
+        $distance -= 1;
         $distanceBoard.text('ZOSTAŁO :' + ' ' + $distance + ' ' + 'km');
         //wywolaj funkcje ktora odejmie 1km od tablicy distance
     });
 }
 interactiveMouse();
 
-//3. interaktywność dla ruchów klawiatury
+var rightMove = {
+    x: $selectedCell.col_index + 1,
+    y: $selectedCell.row_index };
+
+
+//getIndexKeydown();
+var currentPosition;
+
+//3. interaktywność dla ruchów klawiatury jesli nacisniesz strzalke w prawo to wykonaj ruch x =x+1 a y =y
 function interactiveKeyboard() {
     $(document).on('keydown', function (e) {
         if (e.keyCode == 39) {
-            firstCell = firstCell.next();
+            e.preventDefault();
+            $selectedCell.row_index = $(this).parent().index();
+            $selectedCell.col_index = $(this).index()+1;
+
+            //firstCell = firstCell.next();
             firstCell.addClass('selectedCell');
         }
         else if (e.keyCode == 40) {
@@ -103,20 +129,7 @@ interactiveKeyboard();
 
 //4. ustawienianie początkowego stanu gry
 
-var state = {
-    scoreName: 'Pokonana odległość',
-    time: 20,
-    score: {
-        player: 0,
-    }
-};
 
-$('#startGameButton').click(function () {
-    startGame(state);
-});
-
-
-//. wprowadzenie stanu gry, czyli if ruch o 1 pozycje = zabierz mu 1km z puli i dopisz to sumy przebytych km
 //. funkcja losujaca komorki na mapie gdzie beda zabytki
 //. funkcja losujaca komorki na mapie gdzie beda punkty
 //. funkcja dostawania sie do wybranych komorek na planszy np zeby okreslic stan danej komorki
