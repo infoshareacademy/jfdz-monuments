@@ -60,15 +60,10 @@ function getIndexClick() {
 }
 getIndexClick();
 
-//function getIndexKeydown() {
-//    $(document).on('keydown', function (e) {
-//        if (e.keyCode == 39)    {
-//            e.preventDefault();
-//        $selectedCell.row_index = $(this).parent().index();
-//        $selectedCell.col_index = $(this).index();
-//        }
-//    });
-//}
+function getIndexKeydown() {
+        $selectedCell.row_index = $(this).fist().parent().index();
+        $selectedCell.col_index = $(this).first().index();
+};
 
 var firstCell = $('td').first();
 var selectedField = $('td').hasClass('selectedCell');
@@ -101,11 +96,7 @@ var currentPosition;
 function interactiveKeyboard() {
     $(document).on('keydown', function (e) {
         if (e.keyCode == 39) {
-            e.preventDefault();
-            $selectedCell.row_index = $(this).parent().index();
-            $selectedCell.col_index = $(this).index()+1;
-
-            //firstCell = firstCell.next();
+            firstCell = firstCell.next();
             firstCell.addClass('selectedCell');
         }
         else if (e.keyCode == 40) {
