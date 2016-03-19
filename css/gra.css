@@ -1,7 +1,7 @@
 table#mapa {
     margin-left: auto;
     margin-right: auto;
-    background-image: url("../images/game_icon/gdansk_2.svg");
+    background-image: url("../images/game_icon/gdansk.svg");
     background-repeat: no-repeat;
     background-color: RGBa(255, 255, 255, 0.8);
     background-size: 195%;
