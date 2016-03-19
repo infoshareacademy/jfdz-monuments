@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:text-decoration="http://www.w3.org/1999/xhtml" xmlns:color="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="UTF-8">
@@ -232,11 +232,17 @@
 
 
     <br>
-
-        <span>Copyright<a href="#easter" style="text-decoration: none; color: #a27854">&copy</a> 2015 TeamLoża</span>
+    <!--easter-->
+        <span>Copyright<a id="ten" style="text-decoration: none; color: #a27854">&copy</a> 2015 TeamLoża</span>
         <div class="clear"></div>
 
+    <div id="easter">easter egg </div>
 
+    <script>
+        document.querySelector("#ten").addEventListener("click", function(){
+            document.querySelector("#easter").style.display = "block";
+        });
+    </script>
 </footer>
 <script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
 <script src="scripts/cookies.js" ></script>
