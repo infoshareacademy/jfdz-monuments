@@ -18,7 +18,6 @@ function CreateTable(height, width) {
                 $cell.addClass('selectedCell');
                 //$cell.html('Ruszaj!');
             }
-            ;
             $row.append($cell);
         }
 
@@ -142,13 +141,19 @@ function interactiveKeyboard() {
                 showScore();
             }
         }
-        console.log(currentCellTmp);
         //$score += 1;
         //$playerScore.text('TWÓJ WYNIK TO:' + ' ' + $score + ' ' + 'pkt');
         //$distance -= 1;
         //$distanceBoard.text('ZOSTAŁO :' + ' ' + $distance + ' ' + 'km');
 
-
+        //console.log( currentCellTmp );
+        //console.log( currentCellTmp.length );
+        if( currentCellTmp.length === 1 &&
+            currentCellTmp.children().length > 0 ){
+            var points = {targetImage_1: 10, targetImage_2: 5, targetImage_3: 10, targetImage_4: 20, targetImage_5: 40};
+            $score += parseInt( points[ currentCellTmp.children().eq(0).attr('id') ] );
+            $playerScore.text('TWÓJ WYNIK TO:' + ' ' + $score + ' ' + 'pkt');
+        }
     });
 }
 
