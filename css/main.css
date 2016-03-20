@@ -42,7 +42,7 @@ body {
     left: 70px;
     padding: 0px;
     position: absolute;
-   }
+}
 
 .menu {
     font-family: 'Exo 2', sans-serif;
@@ -313,3 +313,22 @@ body {
     transition-duration: 500ms;
 }
 
+
+.stopka-strony {
+    height: 50px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 100;
+    color: #a27854;
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+
+.gra {
+    height: 500px;
+    /*background-color: antiquewhite;*/
+}
+
+.pole  {
+    background-color: red;
+    color: white;
+}
