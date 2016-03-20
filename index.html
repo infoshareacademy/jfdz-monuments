@@ -248,6 +248,7 @@
 
         document.querySelector("#ten").addEventListener("click", function(){
             document.querySelector("#easter").style.display = "block";
+            $("html, body").animate({ scrollTop: $(document).height() }, "slow");
 
         });
     </script>
