@@ -1,3 +1,7 @@
+#targetImage_1, #targetImage_2, #targetImage_3, #targetImage_4, #targetImage_5{
+    position: relative;
+    float: left;
+}
 .selectedCell {
     background-repeat: no-repeat;
     background-position: center;
