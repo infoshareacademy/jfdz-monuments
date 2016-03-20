@@ -16,7 +16,7 @@ function CreateTable(height, width) {
             $cell = $('<td>');
             if (y == 0 && x == 0) {
                 $cell.addClass('selectedCell');
-                $cell.html('Ruszaj!');
+                //$cell.html('Ruszaj!');
             }
             ;
             $row.append($cell);
