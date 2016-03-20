@@ -111,6 +111,6 @@ input[type="submit"]:hover {
     border-color: #a27854;
     border-width: 2px;
     background-image: url("../images/back.jpg");
-
+    margin-left: -2px;
 }
 
