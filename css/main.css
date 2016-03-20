@@ -42,7 +42,7 @@ body {
     left: 70px;
     padding: 0px;
     position: absolute;
-   }
+}
 
 .menu {
     font-family: 'Exo 2', sans-serif;
@@ -56,9 +56,9 @@ body {
     float: right;
     margin-top: 51px;
     margin-right: 27px;
-    box-shadow: 3px 3px 10px #a27854, #a27854 -3px 3px 10px, 3px -3px 10px;
+
 }
-/*próby ze sticky menu*/
+
 
 .sticky {
     font-family: 'Exo 2', sans-serif;
@@ -67,8 +67,7 @@ body {
     color: RGBa(255, 255, 255, 0.8);
     padding: 18px;
     height: 17px;
-    width: 342px;
-    left: 1143px;
+    width: auto;
     top: -51px;
     background-image: url("../images/back.jpg");
     position: fixed;
@@ -77,7 +76,8 @@ body {
     margin-right: 0px;
     right: 0px;
     margin-top: 50px;
-
+    box-shadow: 3px 3px 10px #a27854, #a27854 -3px 3px 10px, 3px -3px 10px;
+    border-radius: 5px;
 }
 
 
@@ -116,7 +116,8 @@ body {
     font-family: 'Exo 2', sans-serif;
     text-decoration: none;
     line-height: 20px;
-    background-color: red;
+    background-color: rgb(105, 4, 4);
+    border-radius: 5px;
 }
 
 /*opis zajawki*/
@@ -136,11 +137,9 @@ body {
     font-family: 'Parisienne', cursive;
     font-size:30px;
     letter-spacing: 3px;
-    /*padding: 0px;*/
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    /*color: rgba(0,0,0,0.0);*/
     color:white;
     animation: fadein 4s;
     -webkit-animation: fadein 4s;
@@ -226,8 +225,6 @@ body {
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
 }
-/*.pudelko:hover .teskt_opisu{*/
-    /*-webkit-filter: grayscale(0%);*/
 
 
 .pudelko:nth-child(2n) {
@@ -278,9 +275,7 @@ body {
     font-size: 15px;
 }
 
-/*.pudelko_ikon .ikony img {*/
-    /*position: absolute;*/
-/*}*/
+
 
 .pudelko_ikon {
     width: auto;
@@ -318,7 +313,6 @@ body {
     transition-duration: 500ms;
 }
 
-/*stopka*/
 
 .stopka-strony {
     height: 50px;
@@ -327,4 +321,14 @@ body {
     color: #a27854;
     letter-spacing: 3px;
     font-size: 10px;
+}
+
+.gra {
+    height: 500px;
+    /*background-color: antiquewhite;*/
+}
+
+.pole  {
+    background-color: red;
+    color: white;
 }

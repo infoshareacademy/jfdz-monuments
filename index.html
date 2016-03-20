@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:text-decoration="http://www.w3.org/1999/xhtml" xmlns:color="http://www.w3.org/1999/xhtml">
 
 <head>
     <meta charset="UTF-8">
@@ -21,6 +21,7 @@
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/animacja.js"></script>
     <script src="js/parallax.js"></script>
+    <!--<script src="js/nawigacja_gry.js"></script>-->
 </head>
 <body>
 <header class="naglowek-strony content">
@@ -211,10 +212,17 @@
         <input id="submit" name="submit" value="Wyślij" onclick="return  ValidateFrom(document.forms[1 ])" type="submit">
 
     </form>
-
-
-
-
+    <br>
+    <div class="nadmapie">Jesteśmy tu!</div>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:280px;width:450px;display: inline-block;'>
+    <div id='gmap_canvas' style='height:280px;width:450px;'></div>
+    <style>
+        #gmap_canvas img{max-width:none!important;background:none!important}
+    </style>
+    </div>
+    <script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(54.3496712,18.646688499999982),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(54.3496712,18.646688499999982)});infowindow = new google.maps.InfoWindow({content:'<strong>LOZA</strong><br>Gdansk, Targ Weglowy 1<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+    <div class="clear"></div>
     <span class="media"><a href="https://www.facebook.com/gdansk/"><img src="images/facebook.svg"
                                                                   alt="śledż nas na Facebook'u"></a>
     </span>
@@ -225,13 +233,29 @@
 
 
     <br>
-
-        <span>Copyright&copy 2015 TeamLoża</span>
+    <!--easter-->
+        <span>Copyright<a id="ten" style="text-decoration: none; color: #a27854">&copy</a> 2015 TeamLoża</span>
         <div class="clear"></div>
 
 
+
+
+    <div id="easter">easter egg </div>
+
+    <script>
+
+
+
+
+        document.querySelector("#ten").addEventListener("click", function(){
+            document.querySelector("#easter").style.display = "block";
+            $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+
+        });
+    </script>
 </footer>
 <script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
 <script src="scripts/cookies.js" ></script>
+<div id="gra">TU POWSTAJE GRA:</div>
 </body>
 </html>

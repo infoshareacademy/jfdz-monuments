@@ -2,7 +2,7 @@ footer {
     background-color: black;
     background-image: url("../images/back.jpg");
     width: 1200px;
-    height: 290px;
+    height: 650px;
     margin: auto;
     font-family: 'Exo 2', sans-serif;
     font-size: 16px;
@@ -59,23 +59,12 @@ footer input {
 }
 
 
+.nadmapie {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
 
-
-/*input[type="email"] {*/
-    /*color: white;*/
-    /*border: solid 1px;*/
-    /*background-color: transparent;*/
-    /*padding: 7px;*/
-    /*margin-left: 82px;*/
-/*}*/
-
-/*input[type="telefon"] {*/
-    /*color: white;*/
-    /*border: solid 1px;*/
-    /*background-color: transparent;*/
-    /*padding: 9px;*/
-    /*margin-left: 82px;*/
-/*}*/
+}
 
 input[type="submit"] {
 
@@ -110,3 +99,18 @@ input[type="submit"]:hover {
     position: relative; top: 6px;
     display: inline-block;
 }
+
+
+#easter{
+    display: none;
+    width: 1200px;
+    height: 700px;
+    background-color: aquamarine;
+    position: absolute;
+    border: solid;
+    border-color: #a27854;
+    border-width: 2px;
+    background-image: url("../images/back.jpg");
+    margin-left: -2px;
+}
+
