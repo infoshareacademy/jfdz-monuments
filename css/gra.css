@@ -70,3 +70,8 @@ table tr td {
     position: inherit;
     float: left;
 }
+
+.ikony_gra {
+    display: inline;
+
+}
