@@ -114,7 +114,7 @@ function interactiveKeyboard() {
 
         else if (e.keyCode == 40) // down
         {
-            var currentCellTmp = currentCell.parent().next().find(':eq(' + currentCell.index() + ')');
+            var currentCellTmp = currentCell.parent().next().find('td:eq(' + currentCell.index() + ')');
             if (currentCellTmp.length === 1 && !currentCellTmp.hasClass('selectedCell')) {
                 currentCell = currentCellTmp;
                 currentCell.addClass('selectedCell');
@@ -134,7 +134,7 @@ function interactiveKeyboard() {
 
         else if (e.keyCode == 38)    //up
         {
-            var currentCellTmp = currentCell.parent().prev().find(':eq(' + currentCell.index() + ')');
+            var currentCellTmp = currentCell.parent().prev().find('td:eq(' + currentCell.index() + ')');
             if (currentCellTmp.length === 1 && !currentCellTmp.hasClass('selectedCell')) {
                 currentCell = currentCellTmp;
                 currentCell.addClass('selectedCell');
@@ -142,7 +142,7 @@ function interactiveKeyboard() {
             }
         }
 
-        if( currentCellTmp.length === 1 &&
+        if( currentCellTmp && currentCellTmp.length === 1 &&
             currentCellTmp.children().length > 0 ){
             var points = {targetImage_1: 10, targetImage_2: 5, targetImage_3: 10, targetImage_4: 20, targetImage_5: 40};
             $score += parseInt( points[ currentCellTmp.children().eq(0).attr('id') ] );
