@@ -53,6 +53,8 @@ table {
     background-size: 120%;
     background-position-x: -60px;
     background-position-y: -250px;
+    border: 1px solid #454b4f;
+
 }
 
 table tr td {
