@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/funkcjonalnosci.css" type="text/css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gra.css">
     <link href='https://fonts.googleapis.com/css?family=Marcellus+SC' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:100&subset=latin,latin-ext' rel='stylesheet'
@@ -240,7 +241,34 @@
 
 
 
-    <div id="easter">easter egg </div>
+    <div id="easter">easter egg
+        <div id="app">
+            <div id="nav">
+                <br>
+                <button onclick="startGame();">Rozpocznij grę!</button>
+                <br>
+            </div>
+            <div id="clock"></div>
+            <div id="targetImage_1" class="ikony_gra"><img src="images/game_icon/katedra_oliwska_icon.svg" alt="" title="" width="55" height="55" /></div>
+            <div id="targetImage_2" class="ikony_gra"><img src="images/game_icon/dwor_artusa_house_icon.svg" alt="" title="" width="55" height="55" /></div>
+            <div id="targetImage_3" class="ikony_gra"><img src="images/game_icon/zielona_brama_icon.svg" alt="" title="" width="55" height="55" /></div>
+            <div id="targetImage_4" class="ikony_gra"><img src="images/game_icon/zlota_brama_icon.svg" alt="" title="" width="55" height="55" /></div>
+            <div id="targetImage_5" class="ikony_gra"><img src="images/game_icon/kaplica_krolewska_icon.svg" alt="" title="" width="55" height="55" /></div>
+            <div class="clear"></div>
+            <div id="game"></div>
+            <div id="playerScore"></div>
+            <div id="distanceBoard"></div>
+        </div>
+
+        <script src="js/randomizacja.js"></script>
+        <script src="js/nawigacja_gry.js"></script>
+        <script src="js/tablica_wyników.js"></script>
+        <script src="js/startgame.js"></script>
+
+
+
+
+    </div>
 
     <script>
 
@@ -256,6 +284,6 @@
 </footer>
 <script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
 <script src="scripts/cookies.js" ></script>
-<div id="gra">TU POWSTAJE GRA:</div>
+<!--<div id="gra">TU POWSTAJE GRA:</div>-->
 </body>
 </html>
