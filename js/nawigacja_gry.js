@@ -18,7 +18,6 @@ function CreateTable(height, width) {
                 $cell.addClass('selectedCell');
                 //$cell.html('Ruszaj!');
             }
-            ;
             $row.append($cell);
         }
 
@@ -146,34 +145,17 @@ function interactiveKeyboard() {
                 showScore();
             }
         }
-        console.log(currentCellTmp);
-        //$score += 1;
-        //$playerScore.text('TWÓJ WYNIK TO:' + ' ' + $score + ' ' + 'pkt');
-        //$distance -= 1;
-        //$distanceBoard.text('ZOSTAŁO :' + ' ' + $distance + ' ' + 'km');
 
-
+        if( currentCellTmp.length === 1 &&
+            currentCellTmp.children().length > 0 ){
+            var points = {targetImage_1: 10, targetImage_2: 5, targetImage_3: 10, targetImage_4: 20, targetImage_5: 40};
+            $score += parseInt( points[ currentCellTmp.children().eq(0).attr('id') ] );
+            $playerScore.text('TWÓJ WYNIK TO:' + ' ' + $score + ' ' + 'pkt');
+        }
     });
 }
 
-interactiveKeyboard();
-//$(document).on('keydown', function (e)  {
-//    if (e.keyCode ==37 || e.which ==38 || e.which ==39 || e.which ==40)
-//    {
-//        $('tr :nth-child(2) ').addClass('czerwony');
-//
-//        }
-//    }
-//);
-
-
-//4. ustawienianie początkowego stanu gry
-
-
-//. funkcja losujaca komorki na mapie gdzie beda zabytki
-//. funkcja losujaca komorki na mapie gdzie beda punkty
-//. funkcja dostawania sie do wybranych komorek na planszy np zeby okreslic stan danej komorki
-//if click/strzalka na komorke wylosowana to dodaj x punktow dla playera, if click na zabytek = oblicz droge i odejmij od sumy km
+//interactiveKeyboard();
 
 
 
