@@ -2,7 +2,7 @@ footer {
     background-color: black;
     background-image: url("../images/back.jpg");
     width: 1200px;
-    height: 750px;
+    height: 650px;
     margin: auto;
     font-family: 'Exo 2', sans-serif;
     font-size: 16px;
@@ -66,22 +66,6 @@ footer input {
 
 }
 
-/*input[type="email"] {*/
-    /*color: white;*/
-    /*border: solid 1px;*/
-    /*background-color: transparent;*/
-    /*padding: 7px;*/
-    /*margin-left: 82px;*/
-/*}*/
-
-/*input[type="telefon"] {*/
-    /*color: white;*/
-    /*border: solid 1px;*/
-    /*background-color: transparent;*/
-    /*padding: 9px;*/
-    /*margin-left: 82px;*/
-/*}*/
-
 input[type="submit"] {
 
     background-color: transparent;
@@ -115,12 +99,8 @@ input[type="submit"]:hover {
     position: relative; top: 6px;
     display: inline-block;
 }
-/*easter pop up*/
-/*#easter {*/
-    /*display: none;*/
-    /*height: 400px;*/
-    /*width: 400px;*/
-    /*background-color: aqua;*/
+
+
 #easter{
     display: none;
     width: 1200px;
