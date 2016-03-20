@@ -1,9 +1,14 @@
+#targetImage_1, #targetImage_2, #targetImage_3, #targetImage_4, #targetImage_5{
+    position: relative;
+    float: left;
+}
 .selectedCell {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
     background-image: url("../images/icon_back.svg");
 }
+
 
 .selectedCellNew {
     background-repeat: no-repeat;

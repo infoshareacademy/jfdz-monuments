@@ -105,7 +105,8 @@ function interactiveKeyboard() {
             var currentCellTmp = currentCell.next();
             if (currentCellTmp.length === 1 && !currentCellTmp.hasClass('selectedCell') ) {
                 currentCell = currentCellTmp;
-                currentCell.addClass('selectedCell');
+                $('.selectedCellNew').removeClass('selectedCellNew');
+                currentCell.addClass('selectedCell selectedCellNew');
                 showScore();
             }
         }
@@ -115,7 +116,8 @@ function interactiveKeyboard() {
             var currentCellTmp = currentCell.parent().next().find('td:eq(' + currentCell.index() + ')');
             if (currentCellTmp.length === 1 && !currentCellTmp.hasClass('selectedCell')) {
                 currentCell = currentCellTmp;
-                currentCell.addClass('selectedCell');
+                $('.selectedCellNew').removeClass('selectedCellNew');
+                currentCell.addClass('selectedCell selectedCellNew');
                 showScore();
             }
         }
@@ -125,7 +127,8 @@ function interactiveKeyboard() {
             var currentCellTmp = currentCell.prev();
             if (currentCellTmp.length === 1 && !currentCellTmp.hasClass('selectedCell')) {
                 currentCell = currentCellTmp;
-                currentCell.addClass('selectedCell');
+                $('.selectedCellNew').removeClass('selectedCellNew');
+                currentCell.addClass('selectedCell selectedCellNew');
                 showScore();
             }
         }
@@ -135,7 +138,8 @@ function interactiveKeyboard() {
             var currentCellTmp = currentCell.parent().prev().find('td:eq(' + currentCell.index() + ')');
             if (currentCellTmp.length === 1 && !currentCellTmp.hasClass('selectedCell')) {
                 currentCell = currentCellTmp;
-                currentCell.addClass('selectedCell');
+                $('.selectedCellNew').removeClass('selectedCellNew');
+                currentCell.addClass('selectedCell selectedCellNew');
                 showScore();
             }
         }
