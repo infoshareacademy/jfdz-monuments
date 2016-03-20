@@ -15,7 +15,7 @@ function CreateTable(height, width) {
         for (x = 0; x < width; x++) {
             $cell = $('<td>');
             if (y == 0 && x == 0) {
-                $cell.addClass('selectedCellNew');
+                $cell.addClass('selectedCellNew selectedCell');
                 //$cell.html('Ruszaj!');
             }
             $row.append($cell);
@@ -100,6 +100,8 @@ function showScore() {
 
 function interactiveKeyboard() {
     $(document).on('keydown', function (e) {
+        e.preventDefault();
+
         if (e.keyCode == 39)  // right
         {
             var currentCellTmp = currentCell.next();
