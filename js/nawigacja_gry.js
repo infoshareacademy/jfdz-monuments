@@ -80,9 +80,7 @@ function interactiveMouse() {
         //wywolaj funkcje ktora odejmie 1km od tablicy distance
     });
 }
-interactiveMouse();
-
-
+//interactiveMouse();
 //getIndexKeydown();
 
 //3. interaktywność dla ruchów klawiatury jesli nacisniesz strzalke to wykonaj ruch chyba ze dane miejsce ma juz klase selectedCell
@@ -105,7 +103,7 @@ function interactiveKeyboard() {
         if (e.keyCode == 39)  // right
         {
             var currentCellTmp = currentCell.next();
-            if (currentCellTmp.length === 1 && !currentCellTmp.hasClass('selectedCell')) {
+            if (currentCellTmp.length === 1 && !currentCellTmp.hasClass('selectedCell') ) {
                 currentCell = currentCellTmp;
                 currentCell.addClass('selectedCell');
                 showScore();
@@ -146,12 +144,14 @@ function interactiveKeyboard() {
             currentCellTmp.children().length > 0 ){
             var points = {targetImage_1: 10, targetImage_2: 5, targetImage_3: 10, targetImage_4: 20, targetImage_5: 40};
             $score += parseInt( points[ currentCellTmp.children().eq(0).attr('id') ] );
+            currentCellTmp.children().eq(0).remove();
+
             $playerScore.text('TWÓJ WYNIK TO:' + ' ' + $score + ' ' + 'pkt');
         }
     });
 }
 
-//interactiveKeyboard();
+
 
 
 
