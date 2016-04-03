@@ -70,7 +70,7 @@ body {
     width: auto;
     top: -51px;
     background-image: url("../images/back.jpg");
-    position: fixed;
+    position:absolute;
     z-index: 100000;
     transition: all 0.4s ease;
     margin-right: 0px;
