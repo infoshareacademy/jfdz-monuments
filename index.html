@@ -25,22 +25,27 @@
     <!--<script src="js/nawigacja_gry.js"></script>-->
 </head>
 <body>
+<div class="naglowek-strony"   style="position: fixed; width: 100%;z-index:2;">
+    <div style="width:1200px; margin: 0 auto; position: relative;">
+        <div class="menu">
+            <ul>
+                <li><a href="#projekt">O Projekcie</a></li>
+                <li><a href="#Stocznia">Zabytki</a></li>
+                <li><a href="#Copyright">Kontakt</a></li>
+            </ul>
+        </div><div class="clear"></div>
+    </div>
+</div>
+
 <header class="naglowek-strony content">
     <div class="logo"></div>
     <div class="tytul">ZABYTKI GDAŃSKA</div>
-    <div class="menu">
-        <ul>
-            <li><a href="#projekt">O Projekcie</a></li>
-            <li><a href="#Stocznia">Zabytki</a></li>
-            <li><a href="#Copyright">Kontakt</a></li>
-        </ul>
-    </div>
     <div class="clear"></div>
     <script>
         $(window).scroll(function() {
             if ($(this).scrollTop() > 1){
                 $('div.menu').addClass("sticky");
-                $('')
+
             }
             else{
                 $('div.menu').removeClass("sticky");
@@ -49,6 +54,8 @@
     </script>
 
 </header>
+
+
 
 
 <main class="content_2">
