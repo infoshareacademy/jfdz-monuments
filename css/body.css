@@ -63,17 +63,17 @@ table {
 
 .button {
     position: absolute;
-    left: 50%;
-    margin-left: -110px;
-    margin-top: 40vh;
+    right: 0%;
+    margin-left: 50px;
+    /*margin-top: 40vh;*/
     background-color: rgba(250, 250, 250, 0.7);
-    width: 220px;
-    height: 50px;
-    border: 2px solid #0f1214;
+    width: 60px;
+    height: 25px;
+    border: 2px solid  #a27854;
     border-radius: 7px;
 }
 
-.button a {
+.button a{
     color: #0f1214;
     text-decoration: none;
     font-family: 'Exo 2', sans-serif;
