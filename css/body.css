@@ -84,6 +84,7 @@ table {
     letter-spacing: 5px;
 }
 
+
 .button:hover {
     text-decoration: none;
     background-color: rgba(250, 250, 250, 0.4);
