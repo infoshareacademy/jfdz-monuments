@@ -1,0 +1,63 @@
+.zaloguj {
+    position: fixed;
+    left: 25vw;
+    right: 25vw;
+    top: 30vh;
+    z-index: 1000;
+    display: none;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    color: white;
+}
+
+.zaloguj__background {
+    position: fixed;
+    background-color: black;
+    opacity: 0.55;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 666;
+    display: none;
+}
+
+.zaloguj__close {
+    background: gray;
+    padding: 0px 10px 16px;
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    border-radius: 5%;
+    cursor: pointer;
+    font-size: 4em;
+    font-weight: 500;
+    line-height: 0.5em;
+    z-index: 1001;
+}
+
+.zaloguj__close:hover {
+    color: yellow;
+}
+
+.zaloguj__box {
+    background-color: pink;
+    width: 18.5vw;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.abcRioButton {
+    margin: auto;
+    display: block;
+}
+
+
+.zaloguj__text2 {
+    padding: 10px;
+}
